@@ -1,5 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import { useNavigate } from 'react-router-dom';
+import Semester3Result from './Semester3Result';
+import Semester4Result from './Semester4Result';
 
 const GradeCardsPage = () => {
   const navigate = useNavigate();
@@ -17,8 +19,8 @@ const GradeCardsPage = () => {
           id: 1, 
           title: '4th Semester Grade Card', 
           content: 'Grade card content for 4th Semester',
-          pdfUrl: '/4th-sem.pdf',
-          isPdf: true
+          component: 'semester4',
+          isPdf: false
         }
       ]
     },
@@ -30,8 +32,8 @@ const GradeCardsPage = () => {
           id: 1, 
           title: '3rd Semester Grade Card', 
           content: 'Grade card content for 3rd Semester',
-          pdfUrl: '/3rd-sem.pdf',
-          isPdf: true
+          component: 'semester3',
+          isPdf: false
         }
       ]
     }
@@ -202,60 +204,11 @@ const GradeCardsPage = () => {
                         {card.title}
                       </h4>
 
-                      {/* PDF Viewer */}
-                      {card.isPdf ? (
+                      {/* Component Viewer */}
+                      {card.component ? (
                         <div className="w-full">
-                          {/* PDF Download Button */}
-                          <div className="mb-4 text-center">
-                            <a 
-                              href={card.pdfUrl} 
-                              target="_blank" 
-                              rel="noopener noreferrer"
-                              className="inline-flex items-center px-4 py-2 bg-blue-600 text-white rounded hover:bg-blue-700 transition-colors"
-                            >
-                              <svg className="w-4 h-4 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 10v6m0 0l-3-3m3 3l3-3m2 8H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z" />
-                              </svg>
-                              Download Grade Card
-                            </a>
-                          </div>
-                          
-                          {/* PDF Viewer */}
-                          <div className="w-full h-[800px] border border-gray-300 rounded">
-                            <iframe
-                              src={`${card.pdfUrl}#toolbar=1&navpanes=1&scrollbar=1`}
-                              width="100%"
-                              height="100%"
-                              title={card.title}
-                              className="rounded"
-                              onError={(e) => {
-                                console.error('PDF failed to load:', e);
-                                e.target.style.display = 'none';
-                                const fallback = e.target.nextElementSibling;
-                                if (fallback) fallback.style.display = 'block';
-                              }}
-                            >
-                            </iframe>
-                            
-                            {/* Fallback message */}
-                            <div className="hidden p-8 text-center bg-yellow-50 border border-yellow-200 rounded">
-                              <div className="mb-4">
-                                <svg className="w-12 h-12 mx-auto text-yellow-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 9v2m0 4h.01m-6.938 4h13.856c1.54 0 2.502-1.667 1.732-2.5L13.732 4c-.77-.833-1.964-.833-2.732 0L4.082 16.5c-.77.833.192 2.5 1.732 2.5z" />
-                                </svg>
-                              </div>
-                              <p className="text-yellow-800 font-medium mb-2">PDF viewer not supported in this browser</p>
-                              <p className="text-yellow-700 mb-4">Please download the PDF to view your grade card.</p>
-                              <a 
-                                href={card.pdfUrl} 
-                                target="_blank" 
-                                rel="noopener noreferrer"
-                                className="inline-flex items-center px-4 py-2 bg-yellow-600 text-white rounded hover:bg-yellow-700 transition-colors"
-                              >
-                                Download Grade Card
-                              </a>
-                            </div>
-                          </div>
+                          {card.component === 'semester3' && <Semester3Result />}
+                          {card.component === 'semester4' && <Semester4Result />}
                         </div>
                       ) : (
                         <div className="text-center p-8 bg-gray-50 rounded">

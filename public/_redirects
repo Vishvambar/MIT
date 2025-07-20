@@ -1,6 +1,5 @@
 # Netlify redirects file for SPA routing
 # Serve static files directly
-/*.pdf   /:splat.pdf   200
 /*.png   /:splat.png   200  
 /*.jpg   /:splat.jpg   200
 /*.jpeg  /:splat.jpeg  200

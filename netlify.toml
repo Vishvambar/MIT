@@ -22,11 +22,6 @@
   force = false
 
 # Specific rules for static assets
-[[redirects]]
-  from = "/*.pdf"
-  to = "/:splat.pdf"
-  status = 200
-  force = false
 
 [[redirects]]
   from = "/*.png"
@@ -45,15 +40,6 @@
   to = "/static/:splat"
   status = 200
   force = false
-
-# Headers for PDF files
-[[headers]]
-  for = "/*.pdf"
-  [headers.values]
-    Content-Type = "application/pdf"
-    Content-Disposition = "inline"
-    X-Content-Type-Options = "nosniff"
-    Cache-Control = "public, max-age=31536000, immutable"
 
 # Headers for images
 [[headers]]
