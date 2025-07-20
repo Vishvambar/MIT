@@ -148,7 +148,7 @@ This project is licensed under the MIT License.
 
 ## 👥 Authors
 
-- **Sanjivani** - [@sanjivani188](https://github.com/sanjivani188)
+- **Vishvambar** - [@Vishvambar](https://github.com/Vishvambar)
 
 ---
 

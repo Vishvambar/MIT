@@ -5,10 +5,10 @@
   "homepage": "https://mit-student-portal.vercel.app",
   "repository": {
     "type": "git",
-    "url": "https://github.com/sanjivani188/MIT.git"
+    "url": "https://github.com/Vishvambar/MIT.git"
   },
   "keywords": ["react", "student-portal", "mit", "education", "responsive"],
-  "author": "Sanjivani",
+  "author": "Vishvambar",
   "license": "MIT",
   "private": true,
   "dependencies": {
