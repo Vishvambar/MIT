@@ -1,14 +1,25 @@
 {
   "version": 2,
+  "framework": "create-react-app",
   "buildCommand": "npm run build",
   "outputDirectory": "build",
-  "devCommand": "npm start",
   "installCommand": "npm install",
-  "framework": "create-react-app",
-  "rewrites": [
+  "routes": [
     {
-      "source": "/((?!.*\\.(pdf|png|jpg|jpeg|gif|svg|css|js|ico|woff|woff2|ttf|eot)).*)",
-      "destination": "/index.html"
+      "src": "/static/(.*)",
+      "headers": { "cache-control": "s-maxage=31536000,immutable" },
+      "dest": "/static/$1"
+    },
+    {
+      "src": "/(.*\\.(pdf|png|jpg|jpeg|gif|svg|ico|css|js|woff|woff2|ttf|eot))",
+      "headers": {
+        "cache-control": "public, max-age=31536000, immutable"
+      },
+      "dest": "/$1"
+    },
+    {
+      "src": "/(.*)",
+      "dest": "/index.html"
     }
   ],
   "headers": [
@@ -21,20 +32,20 @@
         },
         {
           "key": "Content-Disposition",
-          "value": "inline"
-        }
-      ]
-    },
-    {
-      "source": "/(.*)",
-      "headers": [
-        {
-          "key": "X-Frame-Options",
-          "value": "DENY"
+          "value": "inline; filename*=UTF-8''"
         },
         {
           "key": "X-Content-Type-Options",
           "value": "nosniff"
+        }
+      ]
+    },
+    {
+      "source": "**/*.{png,jpg,jpeg,gif,svg,ico}",
+      "headers": [
+        {
+          "key": "Content-Type",
+          "value": "image/*"
         }
       ]
     }

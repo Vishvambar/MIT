@@ -10,6 +10,7 @@ import ResultsPage from './components/ResultsPage';
 import RedressalPage from './components/RedressalPage';
 import StudentServicesPage from './components/StudentServicesPage';
 import PaymentsPage from './components/PaymentsPage';
+import PDFTestPage from './components/PDFTestPage';
 
 function App() {
   return (
@@ -26,6 +27,7 @@ function App() {
           <Route path="/redressal" element={<RedressalPage />} />
           <Route path="/student-services" element={<StudentServicesPage />} />
           <Route path="/payments" element={<PaymentsPage />} />
+          <Route path="/pdf-test" element={<PDFTestPage />} />
           <Route path="/" element={<Navigate to="/signin" replace />} />
         </Routes>
       </div>

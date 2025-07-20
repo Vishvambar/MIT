@@ -1,0 +1,19 @@
+/*.pdf
+  Content-Type: application/pdf
+  Content-Disposition: inline
+  X-Content-Type-Options: nosniff
+
+/*.png
+  Content-Type: image/png
+
+/*.jpg
+  Content-Type: image/jpeg
+
+/*.jpeg  
+  Content-Type: image/jpeg
+
+/*.gif
+  Content-Type: image/gif
+
+/*.svg
+  Content-Type: image/svg+xml
