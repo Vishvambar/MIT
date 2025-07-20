@@ -88,12 +88,29 @@ A fully responsive React.js student portal application that replicates the MIT-A
    vercel --prod
    ```
 
-### Deploy to Netlify
+### Deploy to Netlify (Recommended for PDFs)
 
-1. **Connect your GitHub repository to Netlify**
-2. **Build settings:**
-   - Build command: `npm run build`
-   - Publish directory: `build`
+1. **One-click deployment:**
+   [![Deploy to Netlify](https://www.netlify.com/img/deploy/button.svg)](https://app.netlify.com/start/deploy?repository=https://github.com/Vishvambar/MIT)
+
+2. **Manual deployment via Git:**
+   - Go to [Netlify](https://app.netlify.com/)
+   - Click "New site from Git"
+   - Connect GitHub and select this repository
+   - Build settings are automatically configured via `netlify.toml`
+
+3. **Manual deployment via drag & drop:**
+   ```bash
+   npm run build
+   # Drag and drop the 'build' folder to Netlify
+   ```
+
+**Netlify Configuration:**
+- ✅ **Build command:** `npm run build` (auto-configured)
+- ✅ **Publish directory:** `build` (auto-configured)  
+- ✅ **Node version:** 18 (auto-configured)
+- ✅ **PDF support:** Optimized headers and redirects
+- ✅ **SPA routing:** Configured for React Router
 
 ## 📂 Project Structure
 
