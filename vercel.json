@@ -7,11 +7,24 @@
   "framework": "create-react-app",
   "rewrites": [
     {
-      "source": "/(.*)",
+      "source": "/((?!.*\\.(pdf|png|jpg|jpeg|gif|svg|css|js|ico|woff|woff2|ttf|eot)).*)",
       "destination": "/index.html"
     }
   ],
   "headers": [
+    {
+      "source": "**/*.pdf",
+      "headers": [
+        {
+          "key": "Content-Type",
+          "value": "application/pdf"
+        },
+        {
+          "key": "Content-Disposition",
+          "value": "inline"
+        }
+      ]
+    },
     {
       "source": "/(.*)",
       "headers": [
