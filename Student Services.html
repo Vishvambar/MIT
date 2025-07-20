@@ -1,0 +1,818 @@
+<!DOCTYPE html>
+<!-- saved from url=(0061)https://student.mitapps.in/up_core_student_services?mode=grid -->
+<html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8"><style type="text/css" data-tag-name="trix-editor">trix-editor:empty:not(:focus)::before {
+  content: attr(placeholder);
+  color: graytext;
+}
+
+trix-editor a[contenteditable=false] {
+  cursor: text;
+}
+
+trix-editor img {
+  max-width: 100%;
+  height: auto;
+}
+
+trix-editor [data-trix-attachment] figcaption textarea {
+  resize: none;
+}
+
+trix-editor [data-trix-attachment] figcaption textarea.trix-autoresize-clone {
+  position: absolute;
+  left: -9999px;
+  max-height: 0px;
+}
+
+trix-editor [data-trix-selection] { font-size: 0 !important;
+padding: 0 !important;
+margin: 0 !important;
+border: none !important; }
+trix-editor { display: block; }</style><style type="text/css" data-tag-name="trix-toolbar">trix-toolbar {
+  white-space: collapse;
+}
+
+trix-toolbar .dialog {
+  display: none;
+}
+
+trix-toolbar .dialog.active {
+  display: block;
+}
+
+trix-toolbar .dialog input.validate:invalid {
+  background-color: #ffdddd;
+}
+
+trix-toolbar[native] {
+  display: none;
+}
+trix-toolbar { display: block; }</style>
+    
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="UniApps - University Exam ERP">
+    <meta name="author" content="WeShineTech">
+    <meta name="keywords" content="uniapps university exam erp">
+    <title>Student Services</title>
+    <link rel="preconnect" href="https://fonts.gstatic.com/">
+    <link rel="stylesheet" type="text/css" href="./Student Services_files/lib.2.css">
+    <link rel="stylesheet" type="text/css" href="./Student Services_files/light.css">
+    <!-- misc-->
+    <link rel="stylesheet" type="text/css" href="./Student Services_files/fixedColumns.bootstrap5.css">
+    <link href="./Student Services_files/css2" rel="stylesheet">
+    <!-- keep this disabled-->
+    <script>WebSocket = undefined;</script>
+  <style type="text/css">.apexcharts-canvas {
+  position: relative;
+  user-select: none;
+  /* cannot give overflow: hidden as it will crop tooltips which overflow outside chart area */
+}
+
+
+/* scrollbar is not visible by default for legend, hence forcing the visibility */
+.apexcharts-canvas ::-webkit-scrollbar {
+  -webkit-appearance: none;
+  width: 6px;
+}
+
+.apexcharts-canvas ::-webkit-scrollbar-thumb {
+  border-radius: 4px;
+  background-color: rgba(0, 0, 0, .5);
+  box-shadow: 0 0 1px rgba(255, 255, 255, .5);
+  -webkit-box-shadow: 0 0 1px rgba(255, 255, 255, .5);
+}
+
+
+.apexcharts-inner {
+  position: relative;
+}
+
+.apexcharts-text tspan {
+  font-family: inherit;
+}
+
+.legend-mouseover-inactive {
+  transition: 0.15s ease all;
+  opacity: 0.20;
+}
+
+.apexcharts-series-collapsed {
+  opacity: 0;
+}
+
+.apexcharts-tooltip {
+  border-radius: 5px;
+  box-shadow: 2px 2px 6px -4px #999;
+  cursor: default;
+  font-size: 14px;
+  left: 62px;
+  opacity: 0;
+  pointer-events: none;
+  position: absolute;
+  top: 20px;
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+  white-space: nowrap;
+  z-index: 12;
+  transition: 0.15s ease all;
+}
+
+.apexcharts-tooltip.apexcharts-active {
+  opacity: 1;
+  transition: 0.15s ease all;
+}
+
+.apexcharts-tooltip.apexcharts-theme-light {
+  border: 1px solid #e3e3e3;
+  background: rgba(255, 255, 255, 0.96);
+}
+
+.apexcharts-tooltip.apexcharts-theme-dark {
+  color: #fff;
+  background: rgba(30, 30, 30, 0.8);
+}
+
+.apexcharts-tooltip * {
+  font-family: inherit;
+}
+
+
+.apexcharts-tooltip-title {
+  padding: 6px;
+  font-size: 15px;
+  margin-bottom: 4px;
+}
+
+.apexcharts-tooltip.apexcharts-theme-light .apexcharts-tooltip-title {
+  background: #ECEFF1;
+  border-bottom: 1px solid #ddd;
+}
+
+.apexcharts-tooltip.apexcharts-theme-dark .apexcharts-tooltip-title {
+  background: rgba(0, 0, 0, 0.7);
+  border-bottom: 1px solid #333;
+}
+
+.apexcharts-tooltip-text-value,
+.apexcharts-tooltip-text-z-value {
+  display: inline-block;
+  font-weight: 600;
+  margin-left: 5px;
+}
+
+.apexcharts-tooltip-text-z-label:empty,
+.apexcharts-tooltip-text-z-value:empty {
+  display: none;
+}
+
+.apexcharts-tooltip-text-value,
+.apexcharts-tooltip-text-z-value {
+  font-weight: 600;
+}
+
+.apexcharts-tooltip-marker {
+  min-width: 12px;
+  min-height: 12px;
+  position: relative;
+  top: 0px;
+  margin-right: 10px;
+  border-radius: 50%;
+}
+
+.apexcharts-tooltip-series-group {
+  padding: 0 10px;
+  display: none;
+  text-align: left;
+  justify-content: left;
+  align-items: center;
+}
+
+.apexcharts-tooltip-series-group.apexcharts-active .apexcharts-tooltip-marker {
+  opacity: 1;
+}
+
+.apexcharts-tooltip-series-group.apexcharts-active,
+.apexcharts-tooltip-series-group:last-child {
+  padding-bottom: 4px;
+}
+
+.apexcharts-tooltip-series-group-hidden {
+  opacity: 0;
+  height: 0;
+  line-height: 0;
+  padding: 0 !important;
+}
+
+.apexcharts-tooltip-y-group {
+  padding: 6px 0 5px;
+}
+
+.apexcharts-tooltip-box, .apexcharts-custom-tooltip {
+  padding: 4px 8px;
+}
+
+.apexcharts-tooltip-boxPlot {
+  display: flex;
+  flex-direction: column-reverse;
+}
+
+.apexcharts-tooltip-box>div {
+  margin: 4px 0;
+}
+
+.apexcharts-tooltip-box span.value {
+  font-weight: bold;
+}
+
+.apexcharts-tooltip-rangebar {
+  padding: 5px 8px;
+}
+
+.apexcharts-tooltip-rangebar .category {
+  font-weight: 600;
+  color: #777;
+}
+
+.apexcharts-tooltip-rangebar .series-name {
+  font-weight: bold;
+  display: block;
+  margin-bottom: 5px;
+}
+
+.apexcharts-xaxistooltip {
+  opacity: 0;
+  padding: 9px 10px;
+  pointer-events: none;
+  color: #373d3f;
+  font-size: 13px;
+  text-align: center;
+  border-radius: 2px;
+  position: absolute;
+  z-index: 10;
+  background: #ECEFF1;
+  border: 1px solid #90A4AE;
+  transition: 0.15s ease all;
+}
+
+.apexcharts-xaxistooltip.apexcharts-theme-dark {
+  background: rgba(0, 0, 0, 0.7);
+  border: 1px solid rgba(0, 0, 0, 0.5);
+  color: #fff;
+}
+
+.apexcharts-xaxistooltip:after,
+.apexcharts-xaxistooltip:before {
+  left: 50%;
+  border: solid transparent;
+  content: " ";
+  height: 0;
+  width: 0;
+  position: absolute;
+  pointer-events: none;
+}
+
+.apexcharts-xaxistooltip:after {
+  border-color: rgba(236, 239, 241, 0);
+  border-width: 6px;
+  margin-left: -6px;
+}
+
+.apexcharts-xaxistooltip:before {
+  border-color: rgba(144, 164, 174, 0);
+  border-width: 7px;
+  margin-left: -7px;
+}
+
+.apexcharts-xaxistooltip-bottom:after,
+.apexcharts-xaxistooltip-bottom:before {
+  bottom: 100%;
+}
+
+.apexcharts-xaxistooltip-top:after,
+.apexcharts-xaxistooltip-top:before {
+  top: 100%;
+}
+
+.apexcharts-xaxistooltip-bottom:after {
+  border-bottom-color: #ECEFF1;
+}
+
+.apexcharts-xaxistooltip-bottom:before {
+  border-bottom-color: #90A4AE;
+}
+
+.apexcharts-xaxistooltip-bottom.apexcharts-theme-dark:after {
+  border-bottom-color: rgba(0, 0, 0, 0.5);
+}
+
+.apexcharts-xaxistooltip-bottom.apexcharts-theme-dark:before {
+  border-bottom-color: rgba(0, 0, 0, 0.5);
+}
+
+.apexcharts-xaxistooltip-top:after {
+  border-top-color: #ECEFF1
+}
+
+.apexcharts-xaxistooltip-top:before {
+  border-top-color: #90A4AE;
+}
+
+.apexcharts-xaxistooltip-top.apexcharts-theme-dark:after {
+  border-top-color: rgba(0, 0, 0, 0.5);
+}
+
+.apexcharts-xaxistooltip-top.apexcharts-theme-dark:before {
+  border-top-color: rgba(0, 0, 0, 0.5);
+}
+
+.apexcharts-xaxistooltip.apexcharts-active {
+  opacity: 1;
+  transition: 0.15s ease all;
+}
+
+.apexcharts-yaxistooltip {
+  opacity: 0;
+  padding: 4px 10px;
+  pointer-events: none;
+  color: #373d3f;
+  font-size: 13px;
+  text-align: center;
+  border-radius: 2px;
+  position: absolute;
+  z-index: 10;
+  background: #ECEFF1;
+  border: 1px solid #90A4AE;
+}
+
+.apexcharts-yaxistooltip.apexcharts-theme-dark {
+  background: rgba(0, 0, 0, 0.7);
+  border: 1px solid rgba(0, 0, 0, 0.5);
+  color: #fff;
+}
+
+.apexcharts-yaxistooltip:after,
+.apexcharts-yaxistooltip:before {
+  top: 50%;
+  border: solid transparent;
+  content: " ";
+  height: 0;
+  width: 0;
+  position: absolute;
+  pointer-events: none;
+}
+
+.apexcharts-yaxistooltip:after {
+  border-color: rgba(236, 239, 241, 0);
+  border-width: 6px;
+  margin-top: -6px;
+}
+
+.apexcharts-yaxistooltip:before {
+  border-color: rgba(144, 164, 174, 0);
+  border-width: 7px;
+  margin-top: -7px;
+}
+
+.apexcharts-yaxistooltip-left:after,
+.apexcharts-yaxistooltip-left:before {
+  left: 100%;
+}
+
+.apexcharts-yaxistooltip-right:after,
+.apexcharts-yaxistooltip-right:before {
+  right: 100%;
+}
+
+.apexcharts-yaxistooltip-left:after {
+  border-left-color: #ECEFF1;
+}
+
+.apexcharts-yaxistooltip-left:before {
+  border-left-color: #90A4AE;
+}
+
+.apexcharts-yaxistooltip-left.apexcharts-theme-dark:after {
+  border-left-color: rgba(0, 0, 0, 0.5);
+}
+
+.apexcharts-yaxistooltip-left.apexcharts-theme-dark:before {
+  border-left-color: rgba(0, 0, 0, 0.5);
+}
+
+.apexcharts-yaxistooltip-right:after {
+  border-right-color: #ECEFF1;
+}
+
+.apexcharts-yaxistooltip-right:before {
+  border-right-color: #90A4AE;
+}
+
+.apexcharts-yaxistooltip-right.apexcharts-theme-dark:after {
+  border-right-color: rgba(0, 0, 0, 0.5);
+}
+
+.apexcharts-yaxistooltip-right.apexcharts-theme-dark:before {
+  border-right-color: rgba(0, 0, 0, 0.5);
+}
+
+.apexcharts-yaxistooltip.apexcharts-active {
+  opacity: 1;
+}
+
+.apexcharts-yaxistooltip-hidden {
+  display: none;
+}
+
+.apexcharts-xcrosshairs,
+.apexcharts-ycrosshairs {
+  pointer-events: none;
+  opacity: 0;
+  transition: 0.15s ease all;
+}
+
+.apexcharts-xcrosshairs.apexcharts-active,
+.apexcharts-ycrosshairs.apexcharts-active {
+  opacity: 1;
+  transition: 0.15s ease all;
+}
+
+.apexcharts-ycrosshairs-hidden {
+  opacity: 0;
+}
+
+.apexcharts-selection-rect {
+  cursor: move;
+}
+
+.svg_select_boundingRect, .svg_select_points_rot {
+  pointer-events: none;
+  opacity: 0;
+  visibility: hidden;
+}
+.apexcharts-selection-rect + g .svg_select_boundingRect,
+.apexcharts-selection-rect + g .svg_select_points_rot {
+  opacity: 0;
+  visibility: hidden;
+}
+
+.apexcharts-selection-rect + g .svg_select_points_l,
+.apexcharts-selection-rect + g .svg_select_points_r {
+  cursor: ew-resize;
+  opacity: 1;
+  visibility: visible;
+}
+
+.svg_select_points {
+  fill: #efefef;
+  stroke: #333;
+  rx: 2;
+}
+
+.apexcharts-svg.apexcharts-zoomable.hovering-zoom {
+  cursor: crosshair
+}
+
+.apexcharts-svg.apexcharts-zoomable.hovering-pan {
+  cursor: move
+}
+
+.apexcharts-zoom-icon,
+.apexcharts-zoomin-icon,
+.apexcharts-zoomout-icon,
+.apexcharts-reset-icon,
+.apexcharts-pan-icon,
+.apexcharts-selection-icon,
+.apexcharts-menu-icon,
+.apexcharts-toolbar-custom-icon {
+  cursor: pointer;
+  width: 20px;
+  height: 20px;
+  line-height: 24px;
+  color: #6E8192;
+  text-align: center;
+}
+
+.apexcharts-zoom-icon svg,
+.apexcharts-zoomin-icon svg,
+.apexcharts-zoomout-icon svg,
+.apexcharts-reset-icon svg,
+.apexcharts-menu-icon svg {
+  fill: #6E8192;
+}
+
+.apexcharts-selection-icon svg {
+  fill: #444;
+  transform: scale(0.76)
+}
+
+.apexcharts-theme-dark .apexcharts-zoom-icon svg,
+.apexcharts-theme-dark .apexcharts-zoomin-icon svg,
+.apexcharts-theme-dark .apexcharts-zoomout-icon svg,
+.apexcharts-theme-dark .apexcharts-reset-icon svg,
+.apexcharts-theme-dark .apexcharts-pan-icon svg,
+.apexcharts-theme-dark .apexcharts-selection-icon svg,
+.apexcharts-theme-dark .apexcharts-menu-icon svg,
+.apexcharts-theme-dark .apexcharts-toolbar-custom-icon svg {
+  fill: #f3f4f5;
+}
+
+.apexcharts-canvas .apexcharts-zoom-icon.apexcharts-selected svg,
+.apexcharts-canvas .apexcharts-selection-icon.apexcharts-selected svg,
+.apexcharts-canvas .apexcharts-reset-zoom-icon.apexcharts-selected svg {
+  fill: #008FFB;
+}
+
+.apexcharts-theme-light .apexcharts-selection-icon:not(.apexcharts-selected):hover svg,
+.apexcharts-theme-light .apexcharts-zoom-icon:not(.apexcharts-selected):hover svg,
+.apexcharts-theme-light .apexcharts-zoomin-icon:hover svg,
+.apexcharts-theme-light .apexcharts-zoomout-icon:hover svg,
+.apexcharts-theme-light .apexcharts-reset-icon:hover svg,
+.apexcharts-theme-light .apexcharts-menu-icon:hover svg {
+  fill: #333;
+}
+
+.apexcharts-selection-icon,
+.apexcharts-menu-icon {
+  position: relative;
+}
+
+.apexcharts-reset-icon {
+  margin-left: 5px;
+}
+
+.apexcharts-zoom-icon,
+.apexcharts-reset-icon,
+.apexcharts-menu-icon {
+  transform: scale(0.85);
+}
+
+.apexcharts-zoomin-icon,
+.apexcharts-zoomout-icon {
+  transform: scale(0.7)
+}
+
+.apexcharts-zoomout-icon {
+  margin-right: 3px;
+}
+
+.apexcharts-pan-icon {
+  transform: scale(0.62);
+  position: relative;
+  left: 1px;
+  top: 0px;
+}
+
+.apexcharts-pan-icon svg {
+  fill: #fff;
+  stroke: #6E8192;
+  stroke-width: 2;
+}
+
+.apexcharts-pan-icon.apexcharts-selected svg {
+  stroke: #008FFB;
+}
+
+.apexcharts-pan-icon:not(.apexcharts-selected):hover svg {
+  stroke: #333;
+}
+
+.apexcharts-toolbar {
+  position: absolute;
+  z-index: 11;
+  max-width: 176px;
+  text-align: right;
+  border-radius: 3px;
+  padding: 0px 6px 2px 6px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.apexcharts-menu {
+  background: #fff;
+  position: absolute;
+  top: 100%;
+  border: 1px solid #ddd;
+  border-radius: 3px;
+  padding: 3px;
+  right: 10px;
+  opacity: 0;
+  min-width: 110px;
+  transition: 0.15s ease all;
+  pointer-events: none;
+}
+
+.apexcharts-menu.apexcharts-menu-open {
+  opacity: 1;
+  pointer-events: all;
+  transition: 0.15s ease all;
+}
+
+.apexcharts-menu-item {
+  padding: 6px 7px;
+  font-size: 12px;
+  cursor: pointer;
+}
+
+.apexcharts-theme-light .apexcharts-menu-item:hover {
+  background: #eee;
+}
+
+.apexcharts-theme-dark .apexcharts-menu {
+  background: rgba(0, 0, 0, 0.7);
+  color: #fff;
+}
+
+@media screen and (min-width: 768px) {
+  .apexcharts-canvas:hover .apexcharts-toolbar {
+    opacity: 1;
+  }
+}
+
+.apexcharts-datalabel.apexcharts-element-hidden {
+  opacity: 0;
+}
+
+.apexcharts-pie-label,
+.apexcharts-datalabels,
+.apexcharts-datalabel,
+.apexcharts-datalabel-label,
+.apexcharts-datalabel-value {
+  cursor: default;
+  pointer-events: none;
+}
+
+.apexcharts-pie-label-delay {
+  opacity: 0;
+  animation-name: opaque;
+  animation-duration: 0.3s;
+  animation-fill-mode: forwards;
+  animation-timing-function: ease;
+}
+
+.apexcharts-canvas .apexcharts-element-hidden {
+  opacity: 0;
+}
+
+.apexcharts-hide .apexcharts-series-points {
+  opacity: 0;
+}
+
+.apexcharts-gridline,
+.apexcharts-annotation-rect,
+.apexcharts-tooltip .apexcharts-marker,
+.apexcharts-area-series .apexcharts-area,
+.apexcharts-line,
+.apexcharts-zoom-rect,
+.apexcharts-toolbar svg,
+.apexcharts-area-series .apexcharts-series-markers .apexcharts-marker.no-pointer-events,
+.apexcharts-line-series .apexcharts-series-markers .apexcharts-marker.no-pointer-events,
+.apexcharts-radar-series path,
+.apexcharts-radar-series polygon {
+  pointer-events: none;
+}
+
+
+/* markers */
+
+.apexcharts-marker {
+  transition: 0.15s ease all;
+}
+
+@keyframes opaque {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+
+/* Resize generated styles */
+
+@keyframes resizeanim {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 0;
+  }
+}
+
+.resize-triggers {
+  animation: 1ms resizeanim;
+  visibility: hidden;
+  opacity: 0;
+}
+
+.resize-triggers,
+.resize-triggers>div,
+.contract-trigger:before {
+  content: " ";
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  overflow: hidden;
+}
+
+.resize-triggers>div {
+  background: #eee;
+  overflow: auto;
+}
+
+.contract-trigger:before {
+  width: 200%;
+  height: 200%;
+}</style></head>
+  <body data-theme="dark" data-layout="fluid" data-sidebar-position="left" data-sidebar-layout="default">
+    <div class="wrapper">
+      <nav id="sidebar" class="sidebar js-sidebar">
+        <div class="sidebar-content js-simplebar" data-simplebar="init"><div class="simplebar-wrapper" style="margin: 0px;"><div class="simplebar-height-auto-observer-wrapper"><div class="simplebar-height-auto-observer"></div></div><div class="simplebar-mask"><div class="simplebar-offset" style="right: 0px; bottom: 0px;"><div class="simplebar-content-wrapper" style="height: 100%; overflow: hidden;"><div class="simplebar-content" style="padding: 0px;"><a href="https://student.mitapps.in/" class="sidebar-brand"><span class="sidebar-brand-text text-uppercase"><img style="width: 14%;" src="./Student Services_files/mit.jpg" class="align-middle rounded-circle mx-1"><span class="align-middle">mit</span></span></a>
+          <div><ul class="sidebar-nav wfid_temp620524675 list"><li class="sidebar-item wfid_temp620524707 listitem"></li><li class="sidebar-item wfid_temp620524739 listitem"><a href="https://student.mitapps.in/index?mode=view" class="sidebar-link wfid_temp620524771 link" data-ajax="false"><i class="align-middle me-2 fas fa-fw fa-home"></i><span class="align-middle wfid_temp620524803">Dashboard</span></a></li><li class="sidebar-item wfid_temp620524835 listitem"></li><li class="sidebar-item wfid_temp620524867 listitem"><a href="https://student.mitapps.in/profile_student?mode=view" class="sidebar-link wfid_temp620524899 link" data-ajax="false"><i class="align-middle me-2 fas fa-fw fa-user"></i><span class="align-middle wfid_temp620524931">Profile</span></a></li><li class="sidebar-item wfid_temp620524963 listitem"><a href="https://student.mitapps.in/student_active_year_course_info" class="sidebar-link wfid_temp620524995 link" data-ajax="false"><i class="align-middle me-2 fas fa-fw fa-book-open"></i><span class="align-middle wfid_temp620525027">Program</span></a></li><li class="sidebar-item wfid_temp620525059 listitem"><a href="https://student.mitapps.in/student_examform" class="sidebar-link wfid_temp620525091 link" data-ajax="false"><i class="align-middle me-2 fas fa-fw fa-clipboard-check"></i><span class="align-middle wfid_temp620525123">Exam Forms</span></a></li><li class="sidebar-item wfid_temp620525155 listitem"><a href="https://student.mitapps.in/student_result" class="sidebar-link wfid_temp620525187 link" data-ajax="false"><i class="align-middle me-2 fas fa-fw fa-receipt"></i><span class="align-middle wfid_temp620525219">Grade Cards</span></a></li><li class="sidebar-item wfid_temp620525251 listitem"><a href="https://student.mitapps.in/mit_student_all_result_optimised" class="sidebar-link wfid_temp620525283 link" data-ajax="false"><i class="align-middle me-2 fas fa-fw fa-poll"></i><span class="align-middle wfid_temp620525315">Results</span></a></li><li class="sidebar-item wfid_temp620525347 listitem"><a href="https://student.mitapps.in/up_result_redressal_student_dashboard" class="sidebar-link wfid_temp620525379 link" data-ajax="false"><i class="align-middle me-2 fas fa-fw fa-check-double"></i><span class="align-middle wfid_temp620525411">Redressal</span></a></li><li class="sidebar-item wfid_temp620525443 listitem"><a href="https://student.mitapps.in/up_core_student_services?mode=grid" class="sidebar-link wfid_temp620525475 link" data-ajax="false"><i class="align-middle me-2 fas fa-fw fa-certificate"></i><span class="align-middle wfid_temp620525507">Student Services</span></a></li><li class="sidebar-item wfid_temp620525539 listitem"><a href="https://student.mitapps.in/profile_student?mode=payments" class="sidebar-link wfid_temp620525571 link" data-ajax="false"><i class="align-middle me-2 fas fa-fw fa-money-bill"></i><span class="align-middle wfid_temp620525603">Payments</span></a></li><li class="sidebar-item wfid_temp620525635 listitem"><a href="https://student.mitapps.in/student_enrollment" class="sidebar-link wfid_temp620525667 link" data-ajax="false"><span class="align-middle wfid_temp620525699">Semester Registration Form</span></a></li></ul><p class="wfid_temp620525731 p" style="padding-bottom: 10em;"></p></div>
+        </div></div></div></div><div class="simplebar-placeholder" style="width: auto; height: 679px;"></div></div><div class="simplebar-track simplebar-horizontal" style="visibility: hidden;"><div class="simplebar-scrollbar simplebar-visible" style="width: 0px; display: none;"></div></div><div class="simplebar-track simplebar-vertical" style="visibility: hidden;"><div class="simplebar-scrollbar simplebar-visible" style="height: 0px; display: none;"></div></div></div>
+      </nav>
+      <div class="main">
+        <nav class="navbar navbar-expand navbar-light navbar-bg"><a class="sidebar-toggle js-sidebar-toggle"><i class="hamburger align-self-center"></i></a>
+          <div></div>
+          <div></div>
+          <div class="navbar-collapse collapse">
+            <ul class="navbar-nav navbar-align">
+              <li class="nav-item dropdown"><a href="https://student.mitapps.in/up_core_student_services?mode=grid#" data-bs-toggle="dropdown" class="nav-icon dropdown-toggle d-inline-block d-sm-none"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-settings align-middle"><circle cx="12" cy="12" r="3"></circle><path d="M19.4 15a1.65 1.65 0 0 0 .33 1.82l.06.06a2 2 0 0 1 0 2.83 2 2 0 0 1-2.83 0l-.06-.06a1.65 1.65 0 0 0-1.82-.33 1.65 1.65 0 0 0-1 1.51V21a2 2 0 0 1-2 2 2 2 0 0 1-2-2v-.09A1.65 1.65 0 0 0 9 19.4a1.65 1.65 0 0 0-1.82.33l-.06.06a2 2 0 0 1-2.83 0 2 2 0 0 1 0-2.83l.06-.06a1.65 1.65 0 0 0 .33-1.82 1.65 1.65 0 0 0-1.51-1H3a2 2 0 0 1-2-2 2 2 0 0 1 2-2h.09A1.65 1.65 0 0 0 4.6 9a1.65 1.65 0 0 0-.33-1.82l-.06-.06a2 2 0 0 1 0-2.83 2 2 0 0 1 2.83 0l.06.06a1.65 1.65 0 0 0 1.82.33H9a1.65 1.65 0 0 0 1-1.51V3a2 2 0 0 1 2-2 2 2 0 0 1 2 2v.09a1.65 1.65 0 0 0 1 1.51 1.65 1.65 0 0 0 1.82-.33l.06-.06a2 2 0 0 1 2.83 0 2 2 0 0 1 0 2.83l-.06.06a1.65 1.65 0 0 0-.33 1.82V9a1.65 1.65 0 0 0 1.51 1H21a2 2 0 0 1 2 2 2 2 0 0 1-2 2h-.09a1.65 1.65 0 0 0-1.51 1z"></path></svg></a><a href="https://student.mitapps.in/up_core_student_services?mode=grid#" data-bs-toggle="dropdown" class="nav-link dropdown-toggle d-none d-sm-inline-block"><span class="text-dark">PATIL PARTH NISCHAL</span></a>
+                <div class="dropdown-menu dropdown-menu-end"><a href="https://student.mitapps.in/myprofile" class="dropdown-item"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-user align-middle me-1"><path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"></path><circle cx="12" cy="7" r="4"></circle></svg> Profile</a>
+                  <div class="dropdown-divider"></div><a href="https://student.mitapps.in/itxlogout" class="dropdown-item"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-power align-middle me-1"><path d="M18.36 6.64a9 9 0 1 1-12.73 0"></path><line x1="12" y1="2" x2="12" y2="12"></line></svg>Log out</a>
+                </div>
+              </li>
+            </ul>
+          </div>
+        </nav>
+        <main class="px-3 py-4">
+          <div class="container-fluid"><div class="card wfid_temp620525795"><div class="card-header wfid_temp620525827"><h5 class="card-title mb-0 wfid_temp620525859 h5">Apply for Student Services</h5></div><div class="card-body wfid_temp620525891"><p class="wfid_temp620525923 p">Please select application type and then click on 'Create Form' to apply for that application.</p><div class="row wfid_temp620525955"><div class="col-sm-9 wfid_temp620525987"><table border="0" class="table table-sm wfid_temp620526019 table" style="width: 100%"><tbody><tr class="wfid_temp620526051 tablerow"><td class="wfid_temp620526083 tablecell" align="left" valign="middle" colspan="1" rowspan="1"><select class="form-select wfid_application_type wfid_temp620526115 dropdown" size="1"><option value="">Please select</option><option value="transcript">Transcript</option><option value="percentage">Percentage</option></select><div class="wfid_application_type_details wfid_temp620526147"></div></td><td class="wfid_temp620526179 tablecell" align="left" valign="middle" colspan="1" rowspan="1"><div class="wfid_temp620526211"><span class="pull-right wfid_temp620526243" style="display: inline-block; margin-right: 10px;"><input type="button" value="Create Form" class="btn btn-sm btn-outline-danger wfid_apply wfid_temp620526275 button"></span><span class="wfid_temp620526307" style="display: inline-block;"><div class="myspinner wfid_temp620526339"><div class="wfid_temp620526371 spinner" style="display:none;"><img class="wfid_temp620526403 image" src="./Student Services_files/spinner.gif"></div></div></span></div></td></tr></tbody></table></div></div></div></div><div class="it-section wfid_17536573624609 wfid_temp620526435" style="margin-bottom:0px;"><div class="wfid_temp620526467"></div><div class="wfid_temp620526499"><span class="wfid_temp620526531" style="display: inline-block;"><p class="lead wfid_temp620526563 p">Your Applications</p></span><span class="float-sm-end wfid_temp620526595" style="display: inline-block;"><div class="text-sm-right text-sm-end wfid_temp620526627"><a href="javascript:" class="btn btn-sm btn-link fa fa-refresh wfid_temp620526659 link" title="Refresh" data-ajax="false"></a><a href="javascript:" class="btn btn-sm btn-link fa fa-backward wfid_temp620526691 link" title="First" data-ajax="false"></a><a href="javascript:" class="btn btn-sm btn-link fa fa-chevron-left wfid_temp620526723 link" title="Previous" data-ajax="false"></a><a href="javascript:" class="btn btn-sm btn-link fa fa-chevron-right wfid_temp620526755 link" title="Next" data-ajax="false"></a><a href="javascript:" class="btn btn-sm btn-link fa fa-forward wfid_temp620526787 link" title="Last" data-ajax="false"></a><strong class="wfid_temp620526819 p" style="margin-right: 15px;">(1 - 2 of 2)</strong><span class="wfid_temp620526851" style="display: inline-block;"><div class="myspinner wfid_temp620526883"><div class="wfid_temp620526915 spinner" style="display:none;"><img class="wfid_temp620526947 image" src="./Student Services_files/spinner.gif"></div></div></span><p class="wfid_temp620526979 p"></p></div></span></div><table border="0" class="table table-hover table-sm table-bordered wfid_temp620527011 table"><tbody><tr class="wfid_temp620527043 tablerow"><th class="wfid_temp620527075 tableheader" align="left" valign="middle" colspan="1" rowspan="1"></th><th class="wfid_temp620527107 tableheader" align="left" valign="middle" colspan="1" rowspan="1">Username</th><th class="wfid_temp620527139 tableheader" align="left" valign="middle" colspan="1" rowspan="1">Application Type</th><th class="wfid_temp620527171 tableheader" align="left" valign="middle" colspan="1" rowspan="1">Created On</th><th class="wfid_temp620527203 tableheader" align="left" valign="middle" colspan="1" rowspan="1">Form State</th><th class="wfid_temp620527235 tableheader" align="left" valign="middle" colspan="1" rowspan="1">Step</th></tr><tr class="wfid_temp620527267 tablerow"><td class="wfid_temp620527299 tablecell" align="left" valign="middle" colspan="1" rowspan="1"><span class="wfid_temp620527331"><div class="btn-group mx-2 wfid_temp620527363"><button class="btn dropdown-toggle btn-sm btn-outline-primary wfid_temp620527395 button" data-bs-toggle="dropdown" data-toggle="dropdown">Actions</button><div class="dropdown-menu wfid_temp620527427"><a href="https://student.mitapps.in/up_core_transcript_form?mode=continue&amp;id=11b117230c7b240cae27f5a1b336a1d0&amp;step=1" class="dropdown-item wfid_temp620527459 link" data-ajax="false">View</a></div></div></span></td><td class="wfid_temp620527491 tablecell" align="left" valign="middle" colspan="1" rowspan="1"><span class="wfid_temp620527523">ADT23SOCB0699</span></td><td class="wfid_temp620527555 tablecell" align="left" valign="middle" colspan="1" rowspan="1"><span class="wfid_temp620527587">Transcript</span></td><td class="wfid_temp620527619 tablecell" align="left" valign="middle" colspan="1" rowspan="1"><input class="wfid_createdon wfid_temp620527651" type="hidden" value="1726419953"><span class="wfid_temp620527683">2024/09/15 22:35:53</span></td><td class="wfid_temp620527715 tablecell" align="left" valign="middle" colspan="1" rowspan="1"><span class="wfid_temp620527747">New</span></td><td class="wfid_temp620527779 tablecell" align="left" valign="middle" colspan="1" rowspan="1"><span class="wfid_temp620527811">1</span></td></tr><tr class="wfid_temp620527843 tablerow"><td class="wfid_temp620527875 tablecell" align="left" valign="middle" colspan="1" rowspan="1"><span class="wfid_temp620527907"><div class="btn-group mx-2 wfid_temp620527939"><button class="btn dropdown-toggle btn-sm btn-outline-primary wfid_temp620527971 button" data-bs-toggle="dropdown" data-toggle="dropdown">Actions</button><div class="dropdown-menu wfid_temp620528003"><a href="https://student.mitapps.in/up_core_percentage_certificate?mode=continue&amp;id=cb2a765015e945bb35a7d6d220f6bf99&amp;step=2" class="dropdown-item wfid_temp620528035 link" data-ajax="false">View</a></div></div></span></td><td class="wfid_temp620528067 tablecell" align="left" valign="middle" colspan="1" rowspan="1"><span class="wfid_temp620528099">ADT23SOCB0699</span></td><td class="wfid_temp620528131 tablecell" align="left" valign="middle" colspan="1" rowspan="1"><span class="wfid_temp620528163">Percentage</span></td><td class="wfid_temp620528195 tablecell" align="left" valign="middle" colspan="1" rowspan="1"><input class="wfid_createdon wfid_temp620528227" type="hidden" value="1713716697"><span class="wfid_temp620528259">2024/04/21 21:54:57</span></td><td class="wfid_temp620528291 tablecell" align="left" valign="middle" colspan="1" rowspan="1"><span class="wfid_temp620528323">New</span></td><td class="wfid_temp620528355 tablecell" align="left" valign="middle" colspan="1" rowspan="1"><span class="wfid_temp620528387">2</span></td></tr></tbody></table><div class="text-sm-right text-sm-end wfid_temp620528419"><a href="javascript:" class="btn btn-sm btn-link fa fa-refresh wfid_temp620528451 link" title="Refresh" data-ajax="false"></a><a href="javascript:" class="btn btn-sm btn-link fa fa-backward wfid_temp620528483 link" title="First" data-ajax="false"></a><a href="javascript:" class="btn btn-sm btn-link fa fa-chevron-left wfid_temp620528515 link" title="Previous" data-ajax="false"></a><a href="javascript:" class="btn btn-sm btn-link fa fa-chevron-right wfid_temp620528547 link" title="Next" data-ajax="false"></a><a href="javascript:" class="btn btn-sm btn-link fa fa-forward wfid_temp620528579 link" title="Last" data-ajax="false"></a><strong class="wfid_temp620528611 p" style="margin-right: 15px;">(1 - 2 of 2)</strong><span class="wfid_temp620528643" style="display: inline-block;"><div class="myspinner wfid_temp620528675"><div class="wfid_temp620528707 spinner" style="display:none;"><img class="wfid_temp620528739 image" src="./Student Services_files/spinner.gif"></div></div></span><p class="wfid_temp620528771 p"></p></div><div class="wfid_temp620528803"><span class="wfid_temp620528835" style="display: inline-block;"></span></div></div></div>
+        </main>
+        <div id="myModal" tabindex="-1" aria-modal="true" role="dialog" style="z-index: 2000;" class="modal fade">
+          <div role="document" class="modal-dialog">
+            <div class="modal-content">
+              <div class="modal-header">
+                <h5 class="modal-title"></h5>
+                <button type="button" data-bs-dismiss="modal" aria-label="Close" class="btn btn-secondary">Close</button>
+              </div>
+              <div class="modal-body m-3">
+                <p class="mb-0"></p><div class="modal-body wfid_myModalBody wfid_temp620528867"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="div"><div class="spinner-border text-danger p-2 m-3 wfid_temp620528899 spinner" style="display:none;position: fixed; bottom: 0; right: 0; 
+			z-index: 10000; font-size: 2rem;"><img class="wfid_temp620528931 image" src="https://student.mitapps.in/up_core_student_services?mode=grid"></div></div>
+        <div class="div"><div class="wfid_itxpagelog wfid_temp620528963"></div></div>
+      </div>
+    </div>
+    <script type="text/javascript" charset="utf-8" src="./Student Services_files/lib.2.js.download"></script>
+    <script type="text/javascript" charset="utf-8" src="./Student Services_files/app.js.download"></script><div class="notyf"></div><div class="notyf-announcer" aria-atomic="true" aria-live="polite" style="border: 0px; clip: rect(0px, 0px, 0px, 0px); height: 1px; margin: -1px; overflow: hidden; padding: 0px; position: absolute; width: 1px; outline: 0px;"></div>
+    <script type="text/javascript" charset="utf-8" src="./Student Services_files/datatables.min.js.download"></script>
+    <script type="text/javascript" charset="utf-8" src="./Student Services_files/bootstrap-datepicker.min.js.download"></script>
+    <script>Nitrogen.$set_param('pageContext', '-eUlxVy0zIOKg8Je0-fn1d0iQ_4IFzp3_RUtiiJvzT9NgtzyJ7ljeE6bdHJCuxqmAXpYbcTfHzQPq4j2h-3BWSUONhjpeJcUF-dr_y5T5-0aH5p-A1eZ9wTTeH_X5LqeprGtDHHHkl8hVg2LXKLVM5RpdtwjP9LlGo3zJdCJwL9OMP2H0wCrCf8mW1fr_WiP7PWlJQrGo3TPNREEmOGafGGEbS5WoexJlzd7FpQbkH_t8FUPevo9mtEQiCSALWZPnfc78pi_uYGox3OFrZzWfqGj1gkEtMC43MCk2nwsyRc-9OM5RaOsARPzK9ooU-X5XUNAIWXteKHkK4MtFmKs85_sZW8');
+
+Nitrogen.$anchor('page', '.wfid_application_type');document.temp620528995 = function() {
+Nitrogen.$anchor('page', '.wfid_application_type');
+Nitrogen.$anchor('page', '.wfid_application_type');var v = Nitrogen.$add_validation(obj('.wfid_application_type'), { validMessage: " ", onlyOnBlur: true, onlyOnSubmit: false });v.group = '.wfid_apply';};setTimeout("document.temp620528995(); document.temp620528995=null;", 100);
+Nitrogen.$anchor('.wfid_temp620526275', '.wfid_temp620526275');Nitrogen.$observe_event('.wfid_temp620526275', '.wfid_temp620526275', 'click', function(event) {
+Nitrogen.$anchor('.wfid_temp620526275', '.wfid_temp620526275');Nitrogen.$queue_event('.wfid_apply', function(){
+Nitrogen.$anchor('.wfid_temp620526275', '.wfid_temp620526275');window.alert("Validation errors. Please verify entered data.");}, '0qnPekmc66OHtCwggUke-UHEo6XH03ZGYzhDQCl9DB3O9Qja6AApuncChp-3kAfVTPuQl1h7mRGmYUiJH0UyRBKrzhlJ7qRakdX9HzESd3t0DnC9x8eGNZAdYhYTdmsD1tb4WUjqNEQTei86zayxagTaFLDq4xivXHyFkAqNZua6mxmfJwtCOMe9sRJLwOdiH4Q2vvZpKvT-ZTOFv5fjg6SXmfs_Qmhh0w-DBciGcW7kmWXv', undefined);});
+Nitrogen.$anchor('.wfid_temp620526659', '.wfid_temp620526659');Nitrogen.$observe_event('.wfid_temp620526659', '.wfid_temp620526659', 'click', function(event) {
+Nitrogen.$anchor('.wfid_temp620526659', '.wfid_temp620526659');Nitrogen.$queue_event('.wfid_temp620526659', null, 'wHYibmKEGUfbNzIN-OnEWLjw5d6EpqlDWEQJhIVIC6rW49kZpNIhhGdwXTSUWerKqz0ZTc7z7nsu2YHORbqfUPMBAXBBu8XS7mKRbkjzFpBKIwOHQnCigwIyViVbQO-YTO-lPCpc3B0KxoXwcNjzZ6RS3YozimrmOVjc15Fgeb7f7b7czHXC2nblgEM2_AniaUXNq854p-G_sIzI2EjiAyx_gzmVL25UcDIA1AN-_4u6ZhAmYcw2ci3fHnKyI7EhTULr2R5rteeeGLPupXnzKNlL5mvRu_aVKnnGejdBUy6D9Fx7r9TY3U4ykOfr0PVVxlv0kt5rRRIKuRWFe-V-sKchpwD2_Cv3CmMqPxfE2z81lOuh5xrDTacoLT3qyfHF5EWmca3sZmjADakOZ5i_rPJx3Q0JgMkwM9563SIMyv44vScImGSA8pHj9qNAdN7FSEWqfwf6lr5vaCzLoYJ6Qx9sJNS8jQZ96FchBxT1YnopVqnQBCXI36aMuDJhlZFMl-H06RCCFx8buwRReyQlAYN_YOjbclUmYMs8gZLFRQ2-G0HNGd9RlAQh7MlD7Mn7CvF5xVZ8OMjh2RWD6RduBIVdXqHxt9AvvibaSJgpZ6aJQmPqa45_MvNb1WuzedEA2FWe-WaAdXld2Cgy8xVyEM7jtjtHmMVTdURZxY7HgbDh-QStZ4ajGlnvG8_YCLn1mSJTlyi8JX_aFjdKioKQ0WL9fcmkR5s7OaQzAGMnEVIXVkVUeCkMuoB92EhsY8MPATq7XnIj3hUTVojyIBEi3iJ9YuxRaulIo32g8r9UmTabm66aXqVJatgVcGWPSiEd9V-cEWUwubTK_02IjbX6Hz4iGCVxbbL1RmMah3nsher1SCtyNarv4qu_kYw760InR2BzZugvYbLpP8UB6u8SMP2nF9O9sWrbqEDhJAms-4pSANlP2L3-Vb8t8VfNWAx6oGu0VCf1Y91rgE8eRyruyAd6g3gePlpwZZi292HzAPkBEoTMfTRQeWR6rq6vQBY1-tBwWJa74WDUcV9MTpiEm6RhojmQEq6IARJllvQj8WhoKxcLKU3PbC0VwenGRIo7dA3ZP6n-BvUwZhXJZioeN086cZST1qQaiY7agGH-idAMRt2hRec1dW1Bjvv-iGoi6rvqZ3K9FJ9KRss0zYAAk3JYEuPOsxzlNGuuWWofrbz-rsQqSYemTYTmUtPXYsEKaOs2kqJ_hHVgx_uVpfjgS0NkrxZh5EBL14a9jqIL-5rMyF3MmsuVHpxlTM7bsV5DqBzpZyQDkpQ80QMAVLRRAqf7d03TTflb_Dffd55ema5eENgq8_OqTF1EFCP1ma6h8ye8h8F9ioTm8Oh6G9gB1_LABwSRYqkZzEnDkIToTuP8JbkEKCTuWAPwe-WrX5N6tCSlrk9S3XXLz9x21RDXqKi31s3HDA44aVDVykBdphU75VF_MbWfuCkSsHUxKizBtCntuXzDWU-wOvElVR52djQ8dSlDTwcz0OUeEL4k4H7AVsY0dvUMFuy2CzihH6SPtZYruU5oXO9DZy0bNDeasE5RUbxNd2tOB4A9hc8A6ms5U-kqItJaSFfyM62jsrm9zrhS-3dum9B92UaCgWuRXFM9Bincfpn99bNUv6HXdRywYNrThhxPtpALuqy8Pa4P6n11XwMGzRyAIuPGFLYOtk91kqlXL81YMm5FBxRathwoVvHhxvvF37uRI6LnzhWE-j7pMRQQvOvKkwS_Mvo1d7Jb4U_zQJlx_OECL62WZjDtTAXtG0vRDNxNdny1U4wgBiWC_1mPMYdFofZnwKtgqMNw3sKGQEAa7O3vylJ7tmcn8KkqMyG-ejtL9KG7h1lj-IQXSJPflxlbL5V-Mmx81Dt_XgvYgq0vHmtTAqkTI1kkBlPnz08PTtwCMXxJHHlBJiwecQBM3gaMLl4PwIfKYm1sM-8vmtWxmq-bQ5f7xyE2GONz_4xZgoHf4aYssC4HmRNVv7Z9ZTrJKbLcskLxdjNDYgtTvNFv0g_ekNFgDIFy0drWc_D7Z2KsKHwEz54e5is9stngf3dQwdFtFlPaoqF_teRcHC8L1-J4OUOj6We97N6Z-7TrbODydEEXEF3x99bYpROLrkT9brcANkoPXlLtXtVgeWZ4D8SLCFkmtGMAq5ZE8a8M7uvgEjVdW33iOWS1Z7l1EsJpIl1cp3uTbBcET4zhr54mIsbffwrrOBo9-Jd6X9-XVfvOZG8NYOh-3xlpHVL6-59KrDYlgjtTzEJ2R3Ch_9EaY7MB4Ha4-3MNOp1o8H8sN47VtWIsQuyrfAi2UdufapXykMG-LFeBtpxwg8lF4AbI1Q8A11myMWhVT0s65jrkfPw8tmcQrHC8eW79WR1ROtFLz30hyltkv8_efrnYpjkiL32Y0CMhrMs-c_KQP1dmLz7M7Ak5lHjGYVXkzwdjco1DhR2w5GO4G8-4xusX7lhrIKZAuHdfoytL6aWzwLfw_hJyCjpheBw5rOf5VVsJFxPP76URE1xi1bYv2M-ZF3fZEuyjHpHlSs2Q89QTsW0nMcjPR2DT-bL2LPekITEweHRQKfYWtzUPPPNkh2mIyr-vtoBKHjx16NPu4RlNTh9kv6pB_Q8LTarkwteW0eaQlgFl45HRqanOE94LZfQDaDdZ2nuDbniUBlT91W1-6MeA-DGxtSiRXvqI9Fm0EIIWSFyAsne9firM_zRiBBzcqW-rZf3NEcc9P9abT_WlXeihuPua8K4EZMVo15sEvnBElkws5a8jMDqv4ELAfp7o7jVefyjM91rmEa5XBLFLA2rjuQ-Pj59oYVGzjQVeaDAF2_R-vesR92DE7e1S9YTjuIlyNabnNhvOz76TDoq3Vl0ymwMeU6hr9-DFh9fncr4RZjsUfroqc-__whdlMSsF1Dg4R6hN8Ykv_3Ler-oc9UaMVfqpMog-S5JnGo_2qKiNqqzK4xizWQgvZZCmQa9gPtdycdwtNzhUBF_pxby4WBusCw1xK5jr32eK11j5ChuTLvGa-SqMn-OSK46JZYn8GwMcGH-CtE0ScdHEsHNc4Gjgr7GmIS6nkiHwTva-GGuboT8aUvcDas_91BHq8_BSSzsf5FvmW2bDR5fuxzPT3ycacV3rPlL9xjUyEzFAoM1iMKghmAUbrl9GH0uAIlB5x76OC_8vqGh_kRWPuBKCDVXdXmv3ZEcZLc4tqiPHrlsic5eP9Qb6G_Sf5fHi0EK771aJxpkXHCxUeWQhb9lbJyhtGnMntyECd_kmLpRj8AXSRyFN6p5fsIwdkYghwGEpMkBlC2r518iLWBYykPNJ_1kPwhDvU_IfK0e38quNyTj8HvqSsit3xWWg9B6KiA195q3NHH7WrzCYuxM9fXUgESgpbhoAuFwzGleriauDnesml1OVpVs2eHW8X0PUGLApI-OjIiE2doRwYo30Oul_sQyCDlcIvI1mj6AefA8lDXGxYoRJSQHYkWoKN4dqqOJTo8CV0dagMxeDcp_1PTq-m62LrueHplfV9Kp-j3W5kHs0vb9vgar7qaryfldVpIEQqWapaGqA4j5ark3se-AKLQYVhH28H-MoiO3TtieOz20YD2N8m9CIbMvVMjPOsoRb70kM0Z9aEyU_zqsmBCabSgJ2Vz-fVupzj0y7V1mascWd71HdzJsWrzN7M4AOVBZQ22FuJXkiXbeSERUfkia98h-_S5BasFwQrmW3DVmF21i4zXaiHIi09KJcN-weR1k20oGPNiT1sLgEdx0cT-Q8BMs1NU5bKqoYYUvqr2LjYX3bKLsY9UXmn7W-6pFowb5lPLzSwvpCPwfBSHVhLRXOTzV4hgpCoamg0Jv6nogvsHD9lvFfrsNHs35vuTBXrWBSVOHNb0iwy0-7nsxw6e2E-xD4QZsh981hJn797u7gZ8F5MrIkFaEO-1WPtVsakdG7FjPoFuOfCJD86U0c8gals6C8Z9IVFm3Bu1rFaaBE6sll0pz77Bjd3HxGNvtkeIjm1pl6A2nNrn_iAfNEyKOc', undefined);});
+Nitrogen.$anchor('.wfid_temp620526691', '.wfid_temp620526691');Nitrogen.$observe_event('.wfid_temp620526691', '.wfid_temp620526691', 'click', function(event) {
+Nitrogen.$anchor('.wfid_temp620526691', '.wfid_temp620526691');Nitrogen.$queue_event('.wfid_temp620526691', null, 'iMK007FrycU1EGeNv5SfWQ3AcOmn5swR5c0YKU4iJqJCC3yfPwyj2kezxwocp0PluY2gf6H2qkeIsLVv-VM6VNcKKSVy_W-eKZeKDBqnmXvaMu1HlAJHfZAc3meK3RhvKKjNDF7yiy-_Enb11uPL-bF3Jc-g9OtqubOOJwTZaX7NMQrhQdrOTIoXhwhYMZcYsvWvUD2OBugt4bljI4DpE4i9Yc1JOXqk2QziX9ODndBIBu8tVslrttZ96WDI8mAYcNI4Foj1QmCqow8LPhcfYbm8tGxj0oePXr6d5zLz8WGAjlkl8GM3UQp9-YI-EZduqXPRj9RhhIuxdL3oVBsgTj9zYIBBhK-ic45ofkcH0h1obrTuQLIONtjpiS4GYnXOiGAg9bT8vFQ0tgMlgqE_I6Jg5bOSFfEcH0w0jsLLeM7CH9k4LnXAa7-IduEsOnBcMGe6XRqFridwXWybbyS4yul1THNr5_agq7F3FlzQ3MjjRD9aLtHaFcBCJhr-EWuQd_vYDSWqlsih-9ELp1CZjJwCaFpMA5fMO23EGrL_EfCrdUlLWhNasJUsPcPeFYEaputrnKtNh-G4SZIryurv6GK77MdpU9e-7qd7iN-0O0MoMSaZGu5Pdrbis3PBRfx55JGqtccAw_CZx2zZPdnglFALEdKvh7uz7i2-Kv674J8cTksgyz_tEEqCZnjthHr3YK2ibsfEYqU83fUM1-cXpDeEqgPWqP0a1vTdCglGWgWjEi6wL825QUr-0YRutK8CvT_c3b93AwQMRgWt13NJ0wxGiwNZkvvHxLMzcYEiePznC9Pk45F74FSfBvTJfl4gFMCBER8zNfqgnqpiWEoVviV9kSWXMRdEThxHljTN_4vyxMSBTS5nhcnuKFSQxdlYunpM03Pe0PmBuRfW2C_9orsIbrlPl_9m-WQXkkZPPumbas1C9aH7czGWJpbZq4mgyfXRCruCoLvbtK5Kuf8KKyC08GZsbBJ-V4gdgpLoz7CtDIXx76WUsF-QcgA3wZdhqgaZybry-vhdDSJnyK82QL3MqXeW8DbvhXcUKYJ2ZXx0F48rSO2usXegh1L2zLSFrL6ozdydFOPypVbvgfa7966oeM2ow9gyGZXh4NURrfcsYiFQRNrZi5rhBR_B3oDL6h4PD3v_1cpNSz-uLyEgHjLk2P2m8FDIHCuDc3xWACREx-SL_pMBPfuxQUs0YzuGZsub8YKnFQwWoaFd-QZyc-17Tho5RexMpMchmBPtznQslzFjqz7ldVoay3cEYkasWCzv_Tm0Q3itE3pacyNgoRJzbamtXCCpkvgqqiYxsGb-RgCTjT3b5VZipn8kS0WfUqe1eOAamRwEufKaaQ6hM_PWooi0e6lY9mfxFZHywNKeWIKQmGTEE0e1eUm6XcFIwC8Sem-lnl1nkrXVYLUbk1AhGVidNNcUKv_Vk5eiwT-K9ReWAvkAI1qrzbarKxnhwypJulrgAtGCqVEyE7Dmc-488LlXFyjKOXTiJnWPNP4pn4A6neIXxK1EPELvkenJw3Dn1hzinQkNd_MJlM4RYcv6M8DDI1iGmJkKYolTFxrdmhZxweKUkh0EpyhjLut3MAfxjTWO94jxOG4_IVR6Ajvk6yeuffeCdDwEuOZonVPs9Uvl0Jgbz6FSe5_UBzedbgxHy_k22NW2LVBXmwLrJ_JlXAWc1xAd86np3IGZeuAAaAl6CgBJMbDbaoJLWW4uzyg85xfMgX13kfjckQXe00nckL_kGr5hIfJxTAdylkVaKY5-gVyIToI-xD69kqcKGz4-3pP7dsiBE-tuRSfTqP585_6J5uj8c8SDhzrpjBjNaw1RJnE-BLex2X6UyAeapnU97PZpBwouxZB5DN2C2_ayKFJVJ0Zn0JrdrOh0qnzumYhI0N6d9uvCX9XlubZ9aORDpPbp4kDNR3FIFUDojE0upfQ60fIb4DjaMjl-z8qaM-wbc9zWNc3M3N5UoTruAPc1ZrFl_LCiRiSSmymffLhLl81p9zvzkDQYa4j9IuR-g_hpuw4k0nnv_Q6Jxcj7071Vr7NvRSPVPd2FYgs6QOhyZwIcsHB8uaCsRTJcZALl9SRVnEsVKlH3VVfpN-coTvzoRu2FW90JW__27i3wOjgMPFV62QLFPj-ZSxhtepukvY1MkA-W4NxwZ0KBFW9qGPWwTpwxe-v7ZNE4TcPNyTpNG8qCh0WoHUWbwP-9R426l-TjBPiLraLmuLIE7VHN24X21MWWKrubtae0X7iLklVz-wx1Fs7gh38DJCjY6Z7Ob_vth1IeWeEtPpIOYh9se_XuH54QyBA7hVSGvkNe2bWVfMzGyU-CCP8X1i6WasAeeAYYeesqJzgPDX08ixEXeq_kwQk_H05gVQzRC4Wa-XqaxhOFfYbWYYh-Y5ahvqsVrXKITRa1qwWwBVpX4B6UMiRhXe5UCXBKCqObeUMiQJOKqtcbKxN-e8qlJcRpcsh90Rg89jZS9yCiyS7xXnPfibnTEuWN-4sneNMdBO24LtQt2VnXxpLy96waGhAEz143A-cwBHYxl3XHCDEVk95Gk3TzHFJMYnpMcZ5X8R4EWDegZaeGMb1yPh077TlEw5wXIrL6N5uHjak6ZO6c5-gIxxareBMZAaU61kdh5YzXXNLLNb4ymCsvqxWF3O5FhaJL2oaLOIZQJ3pqtizCt-LnPDqDz7oV55Q5KWBRPYVLdDRAVCdawDZ4YN_j1-5Spxw7qNWn174ZHubQFlcNvbC1tDshkzVcboKYlya0E1ooIxQk9BUiyu8cypgh28AKLRUA2cQTarFbVBIpgR4e8nRhrTqIh07f1PHV4Izk1nHsAWO5uhwbdm7sbBMJS3P_KlCuotqxcxg39su7iNqynIMczSu2OJe7SmM67j-lpX2Qa6v-_A99HkAfqj24l_b4sZkqPjvvsd-S4kGVKU6oEcsi7WNzcLQdKmU44uxOp-mPKGYNYZ6vc7n8Z5R5ojIOZFZH6Q88ZtIbpYtZg5Y6Jq_MoNvEJA0GDUHab6g2Ed8GgPurPqDr5oyc-5-cmMiJB0KUdJefCYTxYzuOleKUUssOJH4BQdrJLxypmAir3KXoB3NafCXBPLsUsWgF3Jwpe26LIy0_dgajtW4EH8oy0oeTcOTQrgdnirFQ7Sv92ppIxUH8b3Op4Bconpb5l1no1qLZ5DKPB__KyR0ZtvYeU-Drlu2jfWaQctzh7O0T5HxfjU3tLHEVGUidtNLIcsho_Iuf3_XVBqWlZzJn96UEMDszIiBbHGNNPMKxL7ydb81_nmDKGo3vsyT0qqN_5J7PpAyhGeKifawBZCE70-av25MCKKo7_L6YyR0O1zhM6SnsNsYOnQQ1t4k0uQwMVzjSZuAfOGAl07X_Af91Ma83M6E7WldyVmtNLIwEIvruOwoGxjFhL_X1s1xaX1fsmx7IdOSRHsk6rtGZG0E9p7FTMSsJFwi_8ajC_yq38juvfDxiSzip92nYAdsHN3MTy2ECR61Vmk7sN3AegT_qjHlvPqvFSaUYm90IMjc0CLZl7Oy8uMnrSoGSc80Gtk7dHAzBPl4INRkhvS5042RSl9Cspx4fwkHH3GM5lHoL6gPxqqXxLwSl4QqkWUJyTY-pwaDWohy0ntk-OUJQ0GrhVkh9VMryhJw58IuNIi9U2ELREiswkOXFuoRr744ZBJgUp-q2VoPrJOZ7DEEVgAJ2IjgQV3GqPauuqW31roQP7a1zubdUidWtDpcwqf3qsNiBf3Av4QMCveIOZKK_5lb8cB5vwC1m9jpJHtvipOGloUhHTZ1KVypUVN1IgDGl64Lyb7LzdtB0dwNLWI2646bURMeM40oOEB60JM3QqtmZ-5r5SPeUTs1iNWlI_QJrBb_b-AJf-1UmZJBxT5Yi_xTXmn8SGmCruS40axRHAXZu2X2D_qTJU1vvR4CxMMHA02g5aFzpsMEAMjGtS60jH5d8dQ1trWuzT7ccjc73YXRUlzr0ESMR5zb9oW2oWZva8_t1zsTilESE9KW5', undefined);});
+Nitrogen.$anchor('.wfid_temp620526723', '.wfid_temp620526723');Nitrogen.$observe_event('.wfid_temp620526723', '.wfid_temp620526723', 'click', function(event) {
+Nitrogen.$anchor('.wfid_temp620526723', '.wfid_temp620526723');Nitrogen.$queue_event('.wfid_temp620526723', null, 'w04RKgtyocm_e40_eNV70rllW5B_EwknXc60eA7OedGm-9LgQWgqoCGnAPb7qbHjnE87gp14k0GG_DenUzpIIRSWtmnCjar9Pe1CpBJNXcu8nOfUKLSpu0G9rQBjAZe1nCUpVFRW-7ue3nBi1Nnv-l6hRHN3HGB8IDPI374uj8paGpdSDBv5qLIU5jLGwiSYIjmtsc3HQnI0xOzqz1DpFziBT7be4voK8bQlnMv58Kzv2KNVSswIjafwuONrsqooIyp-Gx6Msq6Lb2bYIHsJy7rXuBUg_Fp35jo2bJYumdu84jJjH0Qqg7fd0l0YKoGKXSh9Wc_xNLGIZQTwrtcIzhphNTxNts9Nm664FIhEdOEqJNh1OA7UnBpeRC_LknKq3xhpnSe6UMWlXc0eT0wRLvaZ5_f_6DkRzSCd3imH7OOLDg2Zii4wjf3G9DWkTZIfSEXd27Y9-ZIXCZq-mAGMRC5SlefUjOhgtXtTrZWVsJ89X6YPuo9vnsbebIlBALchOfgmPaOHGAd9IXr2wiGJdSl5ZU7up_H9pDPsCk9M9bj0fUMlpgnOprhtfcE0j7gg0-wITzxJNq8BZ3Ul3fwfPD2iKIrK-Kg8eiYOco-OXKwazAKaZ_1wO9I7qDP4lhMbA1r3ACJLSuUGuujoqqWi6nw0a5I8rfRcWEgdHOZDEXL1rXwa3AdiQtWHsplSu3I-YNA7jFG_GEB9xBs-RUoB2ZlSiNLSUHyiehR-Cbo65sPRdqRE1MpOSwrdaUOHHettoF9rR008ySB-EE2IIhZ1NMrFZFM4h5FEdiWA944b7_ld4wkUacfIzaC5O3fdPyW-DwbTuGCJTO8RzBgEDi3xPOyWO5YzmUVqYS_UOZIxjrpaVOjKGEr7gB_htMyilrEsouXcvglEvXgrVVhXtCp0xTWBkm5xrjs0bbOhYoYi4UskvR0L5i2BsF28olm18k1dkkHyFsB-xi3P7Z0tsqlk_3_92EYhy8hGLioWGIzGYAIraRpw37s_Xq1sSZdYm35AQ1gzsDgq1VLqBppVKOQKdlh7uHglnr2hhcMIm5PGYvXrlEDdVsnq1Zn30zk5jbnegQuF8J2bWh-nODbs2ak4xttUst3azcFEK3a0tlw3_NTCqcWOHuNK2GlfdR95sg99A1AqCW8e5bc1odSVBJrE445d3ou_AubDI7ahsHM_xpgXZNIlxQao7V_gD5ILBH-nApfS9ISjR2zjOUv-s76Kfhy4wKX-PZDyTjKVmr2b-bUuAV7rcacBU3tk6yx5Rwpgnsl9xaWRXUzCWbTcfic4zgvkBho1rADabCVLZgXLcCDQFD9mz9pGblODWF4cFPa0ma9nejFo_24VHFAxr4cmk73j0XrBcVlAjvaf0feAQrzQEoID_EO1q1TsmgJxwaWShpTuLgfaR2sY7v0Eip7RxQsyp8OAHa-AAcgy3TrPRikyL-doGtmbvXQ3mUiTsqkZJUcqZZqLd7tT1zcjG-o6Mp7lL2yvqMhQx70Z1L_leTe1puQ7TkM6QgPKtfmqYroj17GZP4ra3Be_xMdhnp5TdoW8eT3AamAffHktoEGevS3zSJ1bqsDOJIxP_SV8ML3mH7dxIsd0svo69aNpRq4Hs9SFvW9gnYTLaZOFhrFBCmDxB3Q6ohjhydVUgwkI2-JUKE7w35Cz9a1a50N7WWnOlIaTxDy--LNOGVsGohRlr_48kF1Rwy_pZaJ1eQoTUydRzvJy-C_fva5ExNMT5RAANUHI2rFKi7t9AgPjgvhHLN48DVdTyAK_JNWVEtHXtyVLAmiCTK_cG7XoKt0IeTTwQ-K6pwhvzw578I7MN43_TglGvwQCzdN_PC324aWzYBrvq1E2BmcwnIma9qXdEphacAGtgEAtmeXwRRSAQ_TLynYzGxp3ZWPkeFtPEHsFfJiWFrSYjcE4zxmvrE-54y85bYE969OGU2um0SSbpuov2QixdjftcEEHwywLe_x8AIIz1f9vIuX4CJ-b8TX1L-TmH5lKeODohrNoYGvR2LkaZE9UCnrK-VObol1xgO7Bb4LZCoo4hLZqC6vs6V3LnMJQQtLdFeEkscFG7DUWIwAH6lJe7DqbzM95mviWU5sJWVdQLCfZSoS70MjZktdQyzpoKJDHEu3XKvAIGAU9By4L_BoNAjmxg8OftmQawSEl29igj8tvUOA9sd308S4aqJsccNja7z35pPYnHLXW9-XkBAVwKlilWDZ3V7U3-rdsUG_PiJ0buX_HQO-KD-9ov7AYLuTf_V65BUYbBKWnhpVB7X298CsDNWsRgEZn1b-_6dFXFAi4ivgzWHL4XT3NNivjHsjcM0ETj88zDCQL1to78Wkge3uMhP9UpxYChuTBLVjtahVwngVyzsH_nNbzPQ8bxKmSZWRScETd9owndZ9nFTatwjTMxm2lO-W-IrpR62KbzsPgCsmpsqqiRAAbflVQtRujfwOP0AL03qq-hW7ulrYT4F9R9onCVuCIuPnuIQdL69_iZ0OhZiibqrLleUDH2ngz6puCB3lYrYYi9jFl_GZdwQhAZWf5sWBdVOphnI8B2EuuEJzGRscLoixJbk8qx0B0Oa0dWbB15GAjA0u5_pgnxBioNOkDYFDNww8baRngNEGRYtHh_YL-QodX67aDtzPnEAtJY7TYU0eiDlq6W3rdL3Xv2WXoocsjbPbM-P7T1YM56vPb-kYCyoJwmE3tnKaYri695H9vtsFQMm7Uun97c0Msvth-7oq0cfG0OsnhMbCPF2_ClG3S5teFUQzKmX6NJpEkhsOO-2BGhplAsuQV4ufJtEkkrNBxRUSqGP5TcRfglc1Hz-EdoJ8TIHbg0c0UKPGqTDnsnWhonDBTx7GPg59tdY0PMHQ-b8NHFqPQ_-adcdBOPGswF-_Rudfsaz0YteLCGZYqEck8KdPFmtxLHXDouGGqB2CXoWn0TmE0VvqtMPkRuld0cECAmYjPKk2X8kp3-kZ7da6vPSw6dagtSovKmTPuTk3VdORuUgVDRK26S3-9PqrbdxKEagm2OoYEen2qf8ZUSN_pq8CX-hp83IES_iaWN0FA291toQKlqMZiAfGMp0hdFjbBizqtEc3CdSIVGgfYs3n_4A6kFvrLc3e06jF-rgadxhy5V62akitBobgbOzbS5Ruy17422rPo3jaZlqFRLB2w1EXYFN4R4-uuxKZLaJ580mgzTPWyogKO4yU-eWjf70n8QoWiZHuNvV9EsB1jtzAGBgFFhBb9NvSDggFDBNRAz4b0wOkpgbOHFcwDs-Np5x8pTSYUdgT9orc9Q771G5YKMkaNmVJkXcMrWuQRymVdrn97fg-BWHYQFP9oHse_C5SqTGVjXzB5Y6JalPOwkKpEyFBuDdT_6Mvg4e2oSOcGDfavQpzTwcEOPxkHPoJaulYKWtOjMPZCp_Ka9-TyMYKV2tUT-RJ9sewT0ezjLXKmbtD0WzBxQFnGUGHG7US78Elh0Fd6hUlZSXMrmW4m2O0eMp43fa7D6fP8b-crldeKzkRtIvjWKMYuW1MxrLrGop4Y3ieRqNGOLsviRK47xRA21JFTaR5XoTomgBacoMpLiTv7GLAno3lpdS7Fd7QR4-aqgBQ1ixpVUAG-9CUhY4ZUehVdW13qddb2falS1pVyNd25D7xyX1U1Ttt666RjM86d8fVLdprx0BHjuo2Aeoq8ILq1jcVPEHsPUxpbBQTGzGg_HXWtPz7FqOP_pnDeYov9dyBzj8dlq3vHEp9NdZS6qfFaQcrNsqPDgpvFW0PLtYUpsD3MZac0BcdzxBvqAYQo9XGKnLk-lc5sVZ59uryel-sI38DQTR-O3sIFdsCrAHr4Jw-BU0riseJ-Bls_6-iTakpz0Pr7zfFiCHD8PEm0xyqdSlSvWRGj5u7LB8iHwCP2c0HL0qJWGS7SGsQxzJVak-sbzzvgpMtdx8_Kc0J9WnJ-zgZwrQ-8CFceHOzAriJgxHVUvWntKSKb1Cfo4VZxglIpSu9WxMLSmVhihUi1OmJM4Lv8jtK3', undefined);});
+Nitrogen.$anchor('.wfid_temp620526755', '.wfid_temp620526755');Nitrogen.$observe_event('.wfid_temp620526755', '.wfid_temp620526755', 'click', function(event) {
+Nitrogen.$anchor('.wfid_temp620526755', '.wfid_temp620526755');Nitrogen.$queue_event('.wfid_temp620526755', null, '1-nRuL9O34BVAw5SOnCVI2DmpDFg70lOZaAp4trF03PMGMGv1EvxpVhikwcdWwXkNZZjoeb_a7RQWdoqCo7wjU1StUR3wanWpLdC960tH1Lh0R8QRcY9UWRXfqhyD4GnqLz1eFTcS8gqstBI7cAbhRjwhpUO0A7dkGlDCU8LzXfC1j2gEuD0CHmkcn3uW-ztXL9_VFN0j0ZywMDTas8b7GzIAAyxwLZPr-nSwNVwi9WkW0YJnascr7Q3aRZFCDqdZ2P8Oq7vOUF2Vc7c6Q-qS2csc3-xtLlZN_fXnJta-w7gRsAkQ_iEJf3Jwv0dW1z9L1PfLlQgqmwuyhP-PhZhskCj1CQeBOPyXCSslzjLIyq_0grSjTmKAWPAnY8Boh-CeWpM5kluSI4p6rS3m0IqXsmPCPRuJ-jAQkh4yCyMZza7zreeTmfbXz-qrgny_L37pwV-oh7ik7oVqSpFqey2E5MhzGAHJDvrUP9i8jHFgFnRND6Lp3SedcyV-ADSaDSfTuYerfT4L0LPSFj7Zj_MEmFA1ItNBGm7Enl88QzsQzLPtLdmcQVCyJLLkl1-Z42vCltW0dJU0dsD0K0X9UWo8lBR9Tjk5i94R92y4JcCjrxLZcq8e4ytxNSk-3K4XP3DDRLgRsUaD9f5ff0iX6NeuXQWp1080M3PHoWIKQnBXXB5vHt_SLJm3i_c-qfoOaC5RFrgQ7lErpKxLApJnR9s3BLu2zlckVUgNMe6_lGnOxhVqF8QzZLD3xyO3rVMAwza1ikvXPoJcJV7Uyg-CX5Q0oIQ8ivWhkp67mAgjGxaKWPJB6d2QHFn6rrQLdSjiPlTFlBtmpfD50L8mm7JwvQh1J4sn2FZaRAysn6Bf_PDIWtp_yopxawdydw7VvO2reF3v3kqiKwDkb4rlqkK_wQQFc71jxeZvLETjbuq7031aRon1RMLu98xuOk2ukDn8sb1KL--EaZbfh8vEc-N0CgROF30MDD53i9jVxhuQGJ-jTN0lzG2ueBgZgcjPAJBGCTZMotTxv7QpN2s-sDJDuKWuH8ywMuB0VAnfftE-YGSZbk412IBzzrvsi40YPufoSQU5M8lnVYiPx8Uh9vlCxEwvAgmiSjRNn7PEEiXoojI6r04Rcb-NCKPlBcv76mxBgyKUg86ADEEXr5G7NpZ5rY-kUWjCBtKhiE44jkuT3tjjSoutk326uaQKqUJzT0lKFCv1EHPFpFIdMJBopFKEnnkjOWNPBo7aamGXb_G2hfwxFIPQds_3nt13yH7CDHcdwQE_lcCqwkTZkKCh-CdaskGHRbgnLibkq3kqo5AM6rXYlEU_OG87MKcwPamDP7Ci0oScTxTCH_gBPbq7BwLqxMhHspIF28kE8P6NYcjOZhtEy63nigBkZG2C4eP-KB7OL8nYBa9t3fzHVddVZPqXynPFLjfTqZzGxx4lCP3YB74yoMY8JwTYNzzPEyL4d8-WiIBiZqzSNplNDKBIzvDSsSXiSmhgQ5AZoOWXNnCAINVMOevbSvZC1_7b98syfqA_pMw1fVvWZkkAhoO5sE87AnrCcQJP6PGk7zcaGmFCMKubsReBssvXjNnS57S0TNoXPkZW2zbUlVIwU4XleFkPM5IyUqK5EUPmjBqQBZf_yUoXHs-Dm-8IeDlJKAZ7jbBE7DbDfvDjUwbH8V0ilpdE62QzI54iUzhuXx28HU8NGUAwaMZfaEpY30kn2hP43SNLf_yKs7xvOCkR1MwmghNKrJeo7HufhtHfCRyajMpf6acRV0vnZ6Ak0Lq9XTHztxrzNzh4gAUkd-DCmy-7yz77PLHe2jOvUSkd4kDnO4wai_-cGT_4IP7ybDqsZPQgigPR-tjxPLoJpIEUzceavFXwNJaUf821WeUXkgvFDhf3gPewGavnna1CfKuzJaF-gdCh8q8w8_Q6BH7koXVrCpWvDH4esj6WfE3BSnJ6E9geTVqHDyTaCnOIYmIEcfjVg5TVJT76mfN36VFSk604N11y-zx-saYy6rRKA7G1yH3HgPYfNPt_os1AgRhW0YUNI6JTjGylL9C6GShr9UUvhMTym6xNHMDpjs_N7oaWTGJzj0wDez1AEvtiSnxV7OWIXPXDnqi_G31kwxNU8Hw8h-VESGo5QKfhCS4HPsIAF6xd93YgnoBZRLmSmfdB0Lzr43QeyHM8vMYWgXipNNyjn4Jy3nEgA7rFRAzkoEQl8SaM9IwlM-I9NAFYg_s_r6thRT6zV0YTpKC7bIHydRuohs5e7lhrGP2-HDnzrUjjQAYZDyvNfYn19kkPxlgZrUr_R1Twe3hyuIeZK7dm_MtbGf4EYrHSsuv1rWqsiS7_PS0TWhm1eO-JB1blwgipbc4iI8wMunBRRUBIAFcKBG_VNxk2vS5Ej2QjPzCxY6_ikm0Fmhw7yfJRwh4hSVe_u6-xb2MDZWqOLo3kUgJ3ORte2LOnCT4p82Mmab5reX08toxQz4VYXcmMoXng5xVY65rkGPfBZAUe-mwC_cetN94p5nk7Tfgb4L851kQ-zLf4A1xwTtsD60-e-36bVjkIqUzQevngptK5Vka26oHYcJVNX-Bw09Prg6KSgNQ_ClOwhqXYAyU7_EZpGP2Wa5RQdGez6UhVv5k4QPIuTR_Hg4i_enkyfuF_FOa_aWWI8EvzJXg4rvKbrrQhX7AIg-7tRKs1MouiCyrZ50dDrqaFvm99acitCyLctU8JfTiVU5WK4OUHOGDPzLCO1N6sJsDQwrlzVzaHrDloz1vuh9jRCAoQJEOor6ogEshqcgBhM7dz4wiW67iK13Z-2hnP-he_1rgnVaJ0mli53guv_j_7QgzhS8gxGEZW9zxDXYAoelQ2WxARFfoO0R2_bmK01QNBtkODRvZVojQeYeFAYk7WdGJt-1IJ7sgQ7yZk7jj0B2iKMXqgOxm4RVkIv0EuilSVnrT2mcTxA2ivkN2SX5PcMjAz-eskvqS-gPheA2KJUs3Miza4hYuf4flvSnFPJABwnEHBZ87RymrOih_06bPdB_MaazhYxUCMaqNRewqPDB5snt0jX8SohgN3ZQXe9_07VO6Hno19EdumdqT77xV4On0Yh8D11fjy14I0hAPozQFqLq28NoAY2bB76dzY4iwop9bfv_Ol387EYivpaYgncuBi0LINQ8_IM6TEGf-qN8ardqWK9As4r0DTsbvMSDJ3B5DUrGiietJaeFqdFRfrpW-nOzyBQi9xf0oxL6DAApDfVizNoDyVvIHjqjDfaLwxLmP39bGbqb_HQwiecnmsOjnm4PCL9Ga99JI43FrBTVHHbHLfvOVagaZTItMTxW7cwKBkTPFheqZ7g2-Jmle68rA91vbieIczk5Zreyi26MHgFKMrKW8Mu-qiHbbcoB8zoTteR15U9s-Pa0JSh_-J8M7zlhiiP4UC6tER2wBjfUYB6FGLOawPRJAaEW17UCkxqJL9cc7xSrEQwg2rNupWp1qcKqSP_V-LJsu5z9Pr18jN0_da2njfdRglr5Na15yzJJ5we67uae482Dtlu44UeEGxkpU7sPZQomWNy4rQ7m1HtnwQnN17Wn8yw2swuCaFkepnQMe2yq-c1oo1KJvZ70cYGte8GnNnoZOdk_UPPBX74Y62J1aDOBRRjqZEzOSzOXkzN1xIehOYLomvFNxcB3ELPABhHiMtHn4VLREJ6sXtXGVSdPVHrm8mZDSek3wx3WqrDRF1pv6WkUq7GWffYn59egU7qzF9u-6PBVMD5P6xf-GrBAuyLjkW9FP7n7qcw0GalbO67b5Qr39mJlV7NpG8cw8C6aV7MS4ozzzHF399vls3AbtSEYhb_qKFP-CnDyc6oFuW-KpqjssU6ppT8vLBUI_dRmcFXWmcYJYQy4uesESaa05FGnqiFG6wsavBiWHSYwlJuGIvUmCXjchqEXvsYhEYkuQiEwdM7yg2rHCJJpO7iOMOMEqlWs13Lrit3dTxP4JjneKJMB0c8cwVIHTInwz9AJ_RO5W49HuDWmtccYpDBH24j8aoh4z', undefined);});
+Nitrogen.$anchor('.wfid_temp620526787', '.wfid_temp620526787');Nitrogen.$observe_event('.wfid_temp620526787', '.wfid_temp620526787', 'click', function(event) {
+Nitrogen.$anchor('.wfid_temp620526787', '.wfid_temp620526787');Nitrogen.$queue_event('.wfid_temp620526787', null, 'De_bc-TwzPo83oSoWT8Nuy_02nh577zhBdiWO0fZcvmRCqjIM9gYOY2FgQotW133uhyaEruFd3fkR2dJFzHNB_7J7PCy5go7Rzbx97nCeU6igDs0E8XQETJ3zW5Jgo6BsKRdFF4-X4BZulBjFSFOc6hOLBS0maKoindmkBLRpThTciJ8qv8KMzTB5LgbCWHmXURa4-kCNXV_kEdPP5bN-kmh0D6GRsJkDpeOMICPz66ES9Y-5PqAwmZ8-chhzxCww0mCA6it7x26eclhR9XANBCo5pMm8wY_fc8X9VEhJo4KEOtUaIl5G0Qn7GscQ4E9opi97OD7FNyrt_9bt_MikhdmtT00hMUxacamRs08sJhETsyLIpbYlde-2foB8n1Lwdyft0-gPQQ2P5d7mezlLa7sVwPCDfYwg9qsczCeFe9eF3sZ_BuGvhTazUcDggrl5tqBlSModXmvmYKW1J1152lL02dXotyujYyE8__aayCvL6R7Nq2P8yA6NOR85iika7nnV-GT8XY8_jx8VvAhaGfbKIyc4a7uJoRKBxqJVtNttYGuiruU-X5KGS3zwFoPll-2aK22QhugU37OvgCH-pBv_Nhjid8HSxwVGZ0dCfcfyIg5-M6BszLIbIm_s4t12JobkKGDbuSDTxsb-htdu9nNVppmERfRJWd2mvLFxdxzcaPCpTrxBcf07TdNwO-bLz7yWfyTLzwrwTA4XK6cqKvcvhn-C0N_SCdTIUm0aU00cykXEhZ9QWLE7nlaUMHdakqwZRPrtqd9PmQlJM541rv_0UtiHjlcEsl5bPUSsngJBNfpGYjIAi8jMUO8ko1CzsNcQ5fYNdXbq4K_J17nVcDDQvwAjxjYZp9WTB1oeo_EQlUU2AxZOBuIpBSoJ1SOJ8CA4v6KZcIqd8ljYsewffsosUkq7c8OhLcedOvBqntdvQVjFL983ASxMWnVq9KX6co_SV6ct3MZ4FH1ovk6yFlIyCCwuX3cdA4lwl33YsGDt3JRarqXJTQoYBf54R20iOSWJ8QPaWKX-22dVPq7An5f6SiZHZdtpau3M7Yc-QxEC0o0IIdaxMjJ87JtZxkr7127QcTRxVR-yiM3QV8UgJue5hbn878cUfx3sqVl28iBRxdb0n2dZzEuAJVW6bvu23zeXZQZvKFqPzZO8i4e9kgUQN4gxDZ9lLTaedmta6PhjBhl9iNpYog1hv8St4IIsIbqgmfpPN_j4j3Pd2I2Kiq-pHQ7gOv1TuurWfo-AQFpJJkhGUmP05DInf6ZoHFamgDbWsHYS3gEWjbSlQKXiBLHGlniRUn0dZNzEsTy5lu7KTXiqXL8OT1tpv2S9E40vqJ8U_W2eCa94pJka-jHxxrA9vVVE_MHF1mWrhubHLIoTheMqrlXrMSptulOi4Hmw7isDVLm4ws6xE_p5N2ZvS5EiOc5KfCy4iymmRzXoay1robqol2c-bcF8ZxK3pbSra7e6UjZjNxv93I8TA_b_kUATsFp5s6ZIHnutcx41oGOlmfPf0ZDjNrNBokqDVAPg9qHNUbgqHJdLv34J3eDeBUsqU2sMo9wpk0bS8iahdg-7nve67CiCRyun-ZR5lzL-iiR-SiybOh1AKDhG3b9cFBpkIwFEn-HG1gHrU-iZGPUkkOa8MCDhE21gu3EXVSWpnMhXFBCvSmRwYYvH1zQz01i6JGder8X7-RowuvmYLSE0KQA69MecmKB1BOo6_H207ma42hDsWvdz_I7r4-2iKQ3Jjd5nBjckiyzup6Wf4wYaKTxBqkowOCEE889r2Gcx_nDNloqMXdawpwWC8YjKZHXHilDzNxwdJpAsvnPEnGXc4M8YhO1I9pEyHBnKbFRKVtHwtWyVrDXyiF4HDYiYLzz_mpBtLzFP77jHdM7tbs5tjgkFVZzYZ29w_DqQrzeNs1QJXVPH6OBzyWm9oUD-msxNfr_nWJmP37XWi2tC8uVth4JMDol1s9j1dVGDA9oE9vAS3w2lMOC869XSkGorNJEdMqKwEO1w6ttfMaR7NmZu7fj49jc3JMX9-3EofImuhEAUMKaA7WCZoDz-9xIjcDk-yPjt7-pfbq60NvoJalkAtLvQ3pAAmJ1qW-fdmmY_PWoRA0-G3Dp0AbbuXur-7OzCQJPce28doruK-vdwIumS8WSiHh2rYkaYzuzFzpKs9o8vpziw8_1rQeLk4am2A6Fq9sNsLgt6uyaSh5fqH_jEcp6n9WRYQJAqULUrvpoik_Ewsmgh_GN1RugLYdy9rB6zyIB-AxVbgfonZs6DDri58xwYDb8-KU_4H8tw2-1gPf94aIlef2UeLZppT1hi1W1K5XTmYyP2nQvSKdg4NKF0lpwx1L5X39Xy32RK_xgaO6SJeMg1h3UBNY7scpsTxD8m84mjdSQtR4h_A4zfRMIZJxzrAD_FC-6sNJIA_cNZAmO5HPFb0wPUUl_ez43nPfBGpOlhUW_A81t1zYa2ds0ec6SV8s7gGGxQAeBaBFBkKpjpO0hhr4Tg2Xp_NYtV3himVbiDmUohZmN3NGgFyaNwTr7Y5AXjNMe6DPOT4kLoPor5XP3zLPd_E3wR4MCKv7GWZkhPuXTAuGckvkHugHFrL685Bhs2DFldIkgPo6V5yTG1JI-9c6cM1tdvsPMpxUwdRJzYLp8wfSSdlY6Gp3T5508FTMmEOaTpNqU7hrMAJtl-YZiTddd2RwyEcupJk634Pl2FCiECwPo72Xuv4ss0Pe1Ld_9uExkP3XHpqXpJMeVUthSh3XrRyKwlzFjSvBNmrEu3QDEEoVc7QlN6i3_IZF7zBhlYWtA7tatKGOxwYQ_S6WayvGx12bmZeIGfQBtHbw4gwR5pfE1giFSo290XuX2WnLZB1ZLc0rV1qg65fF4y4nRmb00wK1zIoS6TexU30XqsNh5EqJV10_GTX7jJr0GeHpcqG-P41uVVOZGJCtZ9oXNe929aKNKuRkhZzNn79c9ll7A60flRin4AnmaNGU9KcUNsOggjIY25BztZmVweCjhPhSRuoudUQZNp1ukoqhahgYEX6Wtd2iFRv3v3Y259GLPwoPRg5ySBco3ltIBUU5Icl6vExsvLb4IxzaKliSgdPfix7k2HvqDKuReH8sUyQFmoPdWq-UXZfWEMApRS-izxgYkuIpWHz4FhXLtLvr82B-hjmfAw5luE9BUxGwHcQSBUhasEIwGfSxI5AMnOsVeMaxppiStd6J7bQZr-YXIf-sF26PXSyoTOajOHw2SOJLQAW7LEXEzo3YdERYwRG3IgEyJygDxghW1N_0aF607WD_jwzYWupVGbf3EMeFaCwp4dZKieJft8LHog7oTVTwL-GmRBD2Ca77kvunmsVCaBrfG72nD8MbzjhIxhfhP6bCMOHF65w0RuIR57hgb28WiPZoAmkn8lAHo6Z8lSiflJf1zvPymJILGGDU6oRYOQ1WiZLdS5ReVbqsuHdOv4AL7w7bX-IAog5XwclwhGz93hM8ZUyQk78VWD_9_n692cu1_fzBz5Q1JUsnWmajmnCzXJ2iGNCLiYStRSrWZvUXQ0nn5YZTUtIxP5Qfe5uyePhtQwwx16dUfN8bzCPTaQCkVelnBHlApffvlihLJJrY3BeyXow-6T63J59fw_WWM3SjBXHXrAzYaWh9o8xeOJ2T0d0XxmqW4Rvzy2XfdR9Cx2Ep0u1o8tgZrcC7dXl58Cvu8g0xRwc-fUo8qUVaYgoU73oYmU3alBFGhXKuBUGnYbSSgRvL_r9s-uqBo9QphcLbxXOmOJ-0ZAW__1DbiSrLQ9303TskmXdGKut-0ME2bFH_MNlVnT7lcrFQbdhgyLa14E8OqNyG9Giaow04ptkj9fL69UK_iNtbWgOcTJzLa6VhrKDFbCJJYC-RTLw2_wva2ORGIuVs4UugTsQPHcA9zMERYgz3aWvsyehZ5v3N7ZcCP6xxuY21OxA1ExD4Wndpr9EDSzSY13M3wob485o2wh7fPEHF2NLmav0lH9PaMsEU0fQ3_d6HnYUKfgEOp', undefined);});
+Nitrogen.$anchor('.wfid_temp620528451', '.wfid_temp620528451');Nitrogen.$observe_event('.wfid_temp620528451', '.wfid_temp620528451', 'click', function(event) {
+Nitrogen.$anchor('.wfid_temp620528451', '.wfid_temp620528451');Nitrogen.$queue_event('.wfid_temp620528451', null, 'R678ZoYBArOx4C0OGOzxAjBLhmc11mGgGL05Vw0MPyp2RaaMVQiu2YPXMdPr_2ap05Izrit5BwjLq0mRlhnwhKo9RAPQTwP1wf_oM1FUHMSK5YVfGfzLBZZJWm14EVtt07i9lkWj9WBiobg7dPRFL2HtryU6nvmGzn3QT2zEuGoRlU0IZUnS9cfpGlnUB2c7s3NvmwzI39VWW-B_kX_q36Ln8kBkMEBaB3qWPVKLu9XaJ2JixgWOproSihyvnLQbxEcWhPsJYeWHXXhDCKh5cUrShBkoeHHA1pfSvppuyglbZ_r4qQU4XoYLlcJE8-zB-3uwWHDIL6drVII7Nx1T8cfnOP8SV3PJArofMUanHrZSO9jxdCjcArvv7CrEkTWWKfJMTot-gUUA4sn-clu-5qrHptE_mGtRE_puPyLsX0lJUr0X9YrreJ4dxMe5J064ldAKhlxtqk9W2W-PBDBPnhOOI0OHTj0KyJyEG1CTgtuXGIk_xCE0i7jjZKlTgDs66dk4ORKjay8M1GefeDbPRy8Njq4hZfJ6PgQoXNmO-bjIjI7gIlqNN6qLQFveEnEdZ86fSrIdNPOYzFICnmZfrcuI2gGiVPjRAjO1an8Y40iOF1rJ4WUsWHD5HIsp4s4ycdzRXb84uzKLhDltHd8H608L4qI8xP55Xsq2TP3ARTAuCYvPhqMdLtwxEzSe39CP03gfttaQ6EA2x5eoGyYfdcVJ85t227COPhGVi-9mkod4Jo1oflBDwwe0tKlmId5GuyUzmWjRSLN3zzr5S8Gbq-fTVgdVXbJlF7VJ3iEMelUiZ7TtTTBiCM6mDa1vXwytwjIvPEN4E_vfO5lAZA2JAUX4ny7knIjbnOOgdMsfTN-EMajB79krvU-KsgeC20njh-dgJgvX2m0TlJkUNKyFHKVP3qiJdZZ0FS6KHgWLfCjX2FqKNs6hUSE7kBkaXIEoAYCuYu_G6lcwB4da3uDON6YfEUhQ-yitzcl9WHL2wKuV3nfGb4H-6nkSEHu0Fu2hPpyPFXYvgRwlMy0AQYAxcHXNKNkY1hfS--0ns9wuliLFKb0rsFeiXgXT0l8zsmFHFQQK9JPhZOojxZy4CLU8G1lPcmbaKI61Zmnr7HFJ7AqAIFI0OgoGe02yzNv7hxoJRRSdZMp2Xwe5etUhJDjGjVuXs3tfeIOHlSJGXJcFvmx-Pazc818VMKVM5qXra4BCQw3DJRXu7QHKqAELzyzbjUaISJCP6D7Rw6NQLw-OAxHiLN5QMcOp_Yo-lnrX62bsHHAJNzryvKjfxx35ZtcoXfwC-Vzo0XG6y1z5moy2Xwdo1hjOhmplSaY60iuR8qZcHjsSsIWonTfDWktgNQN1VxcLNORV2XB2owvg05VRszVWSnb0wuuY4uBqyqt17GqzSIE_JCikjyImNGHh2wuh8pb5NJmlHkGVRlX1M7Pmtfq3UK9cASfgEA7941qzhTkJqrEEgqwXvy3ajKV3NpkuIeZw3N2Ck3cHalApdNzoosa5qNALHb99nwfvTYrQLGdRkL4Rt3oxWMASfrZKukuXng_WIjsKy4-NsUz1eOlinE6uKLGPvCu2SMmCgVLo-NKqfhUP8SlZS1g3vwjzcSn7HNZ3TkjY47xptpvYooExmzY2_b28uNb1R8Qw2LHBq9l9tw5cwFvYEcEfOwQye5TxHhcEgDlh6on3DNFmgJ7O9e16u18QDkkgHRE3prJ_ZTr08Rj7aEc-hpJX2Dcc22g2HAuCRU9iaMDZQEkIRlFxhnPxvQOeokQMe_EgSJN3JUCOomeDyAWHXAFzLRnMNLIBuYGIVM8MgdzzgsksAAuLvPbUQIPObeuXWQvuPOlZIse0rm4CoKLkBn2KVMMWzjP1VoYXQ5-JKT_69MkKoMwTXRBw2LRi8vI7l124097WB8tZUeEA-QeXXG7CP2jb3Tai78PfJwYs5UvccHBAAtGaufb5ibyuS3Sw_uZZIjymta-T_iF_XQbSCCNLHW6mj_Fh-nPVN4u7S7GsLEY5M96ksRMP8KxPlBr9Hy30mF7NmTSWh2D4SuMde3MSztdK8EFJpgIARLWsUh6op09rjZJamzuNwxiXabaUk5sLffyIMXFPgHDJnihigbRF302fLR0OA5Eo54qe2jJxzSHxFIqlT8U8ET2OxRvxz6IufhnHmB_aOcrKGhSf7Z-9geVd6k86dfnWozCsWZCfclP_unGj2s7MwJUo0YKjfsACsIl5m9bEGCH69_6okvE3j3zHhVFjIsp3NcEnxLC46_YitvOH5vF-Uyx1lGDg2MPG-4cUkUemb0YvsARa2QioHR1bpdfidyA0sBj4iSCaHGmdf4PjsUkdolDuxhlX7YZiHi5x9vQ21Sh-g4Ov7W5VVpuZ-0WjNW20HWPsAqnHIpQ74ZJiNrJEILtWjPajSRMHWUN2ZbuOeN7cZ26bq2vUzmUdzA5Ld1JG_PY7yHum7Tpdy4ImbbMD-GJx2QOcOLla2V5XZgNiPSBtyynw-joeIdHeNfIO7PjQxLUpbTdY3DqgtnUDhk3c8bs10rmpz_YcZin0kvRCWX4c2mVT47ImSZWizR1zysL0KFzl4fSwsy8bFtgREY-rG_5PYTLsY6Z_Vv0lj_ZGnw3qW-q4YmNGBGb8AHOWXUoatO9ylYPxcUxIpY6ZYO3T3DRQ8HVPuZ_5q4Hv5vU3F59o5cVDpfeyklz078t3mnvdPVjF_q7xOUDkFpeSqBBpV8GRN3owfYAkUGjRAFH7O3HCLFp_3sN0Cg-JKlMZuwq3TNYUspjDf9W7XE147ajPo58rNwTFaVYGbsjVdpjoIz3A6ckjmYdfuUuApaTo78AqrSuNi7zLZaxHbeEucqC7Kok7ZbT0Jn1klDRkzYL8av93Xh5VutckRQY8cLF93ef84p7eAZbOFaISq_LVNvTb87Yh8kZ70_oTBVN7Y2x6h1arMnB_f_PI-IXFKl7QPl5GczEAF1D3kWc4W3KuEBWSgUB56tMZ3HbIf2c5XdM8EQUHqwEmKXrLdpGNgav1f0n5VfzYJIJWrV71s0vnsK3GONNHLmLt7S47YdOAro46c0DV69-yoQi1otOrxoVNm1LlQkWFkNbsB5AGZMEWp2S-6fjj21liQqPaRjP-p6tmvPXmX04tUzlLF7VcthY4p4ZndZT-qOErrNX1kESh7pJGtS1n8iWRalFAfCIjrUA1mYoS-hTYplmmRp-2U5tPl52-dJvxHaDQZG6NHtpyTfpbrssQ-C9KsRF3UFbdIH8EdyyRQ-eZ0U0dMECCvJ2Y5c2qAQYB7oZBc91Ch5KDtHZwn-PO_YCKM2JiXWEcsu59-c2fDhS8lzAW4fIl_vFUltycLOB0WVEhBNUJF8h52egojzE0MnS3qi5SoG_SdRfVopnD8KBE724BRmf8QbVTI3dSKWnuThPK6OsBOk4fd36UBlI4X3KEIn1dRqijn5fo7Y4cAxmXss28Et0tQfgdCG0SYINwqgfAFsQPdI7EOAqU2ng_Ay7irFJajTbw39q5d890SUnOymuYDvaQTfzdEj9im_Zjlm_0W08r-MuUi5E8ARLDZ3sd_rSpkq4IdM0fn3PF3BlegBbI8MfjED1fo8FT49X52A_ScNoE0yARY1U1WN97n8Rg8L4Buzck67aTJF11XRHGU1i_nQSHsa2EdaXTcM1g_ogWxEZvD8w-Xguuz9eWC-P_T2nSo8ZdzxyVl04kQrJdjyctGkW6--GUy5AMKWV-FsDiK9reKfYiPD7r7UxmLr7cvUXl6MJek_XPRlicHPACSz4oe7qxe9ZIiHSOFE_Oyxh2UzEUA3yO4U9kFspjqpElkKq6Kizf04KBRReTw1sQJdlO1V1m1VR8wOtb3Zc7mAyc9wDejYVF11VgFt5UY0LzYa6-0n1kSoVd_MkWohdQxxvzPWabP_nObBHjN6qckz0fTJ3UGoJ8lvWfUCnT7W0U4eXbuSdEqSF-ZdjXYM5J0oVJ_80t-abR08NA2h_8QcVM7RjHMlQVKaY5XTbb', undefined);});
+Nitrogen.$anchor('.wfid_temp620528483', '.wfid_temp620528483');Nitrogen.$observe_event('.wfid_temp620528483', '.wfid_temp620528483', 'click', function(event) {
+Nitrogen.$anchor('.wfid_temp620528483', '.wfid_temp620528483');Nitrogen.$queue_event('.wfid_temp620528483', null, 'P0eX77JiyjOlk_fPdwvdw4nJMlQOxRMQss1gzUnPLudjeNr-VmG0LfSxGIYsW7Q8oYXwAEJHsaZz-v0knys8Z0DpFE5Yx-GLOsypVWPSjRCX4KldUtPdiXUpbpoRqx4TfPbmvZk30h3sFQW53xh1VthndAAGEl968JVj0-03xGsOwPIN0pCffEga34s7rC9kKAEBrBuqiRutljuANhRyzydCtXajn6PV89mwrO_K60KKbZaMoiVfVZEL42cjyxVQo715sug_LPbwzxp4ETqphADjyyB-1zkRs1RMC3TAOFF30Ok4OzG2tsGPK1JP86GotNAoY5sy-kWvfdmRYkxu1dJFsWCHmxy22r511e-aSqCGsa4bhIQXIrMha9mJIjnpd1uxpvFNOSVEMNdhilCfARDH-2QOpToKFK3AFcrU1GewgleIP7LNLklNNM4kiPJDlBkvv7gE0sxHQt_GMrijJ39IDZddpTlokcWcUPDbW1oDVhHbLfQ2OlNurLLYkro47NAfTJUMcr02cMVpKdTOkYZ6BGQp3ch_RunOY9-nmBgdbBGr81ypKlxYB6QUTHpgDyVHEqFiZOMyqqPMxQWtINQ-M7vL8aZgBp2pdX_tQ0C3SOyfSvCU10ZPY2NZkF2WVg8NBJZpd-sesS8LdwQgZdj-d_MW6oEkF6K5AK5citg9k8sL2qU9Dn9AuSjQrsy7guEBwE-yWP7cRXLTbPl0gRJxZmiaGzX8-hXlhljqACbGP6Qb9MyrikYpOZIJR4YCZSoP28hG7K07SJlnlNPFlA9Eb2tdbX0jN8a0Bocf-SX5PNZbWPobPzsIfiI3s61-6_t_ZWIiJxYri05EFaRs-DQFt_MUMIotY1br9azQ_-CH4uX3vZ45v9fnbc12B01XFPMnrNbDfWN8uq6EGQLzioLTBTwwXdCf6jScmR3-gZhSAr00iqBf0YpKt8BljTL0zkHoSn1_dZgfo_JrHSAyt8DmTXJfKq1EkIrswLhgeGFUVE9BLgRmyF3KYkEyvyUH_nG8uqmwy1EyFCm1a4unNVU0fmb1qiRnbNhsCNU0O9rlBSNvNLw-l3QAAOSqD8TtAj2p4gXsWSXV0AyO_mSRsldC_YJUMQhi6H3Bk0Q6P-rmhpt6ZMNPJzrtCFuuhKr184U-4wkHuW7HrhkWoEyIHqHfHqYvXxCGGsJBPeJC1KiMCP-OihfikzXDA2F00AnYbCrTKLI34najCpGMZSSPj57mPK_w6ySmazThlJnEvHSyZA1VqQMo7rT8M3x2Gd-wRB1w0YZR4IYjPwER5mosD7jt1ceTtrq_QAWcF3MXo5HublaAbAGtLVhOQ_WFNagHSQODhJCphgzpT2PMk904BKzCYKU-ANp2uJJYqc4rTC5voi7X07I7bjBm4sPq_XAG6FCW_bf7jCNcry9Wo2YV-ooqdObhkL2dU3Tqap78johI5wclZmifcOqnpjOnrLQmcwcObrn2Nz9oi266shpN17Lc8tyONyhQj6vN6NrFHHGsLQTgo-yaPJQqJgO9kCqqclCgPmBHxgl6xEdKhyCRHqVS1nkUxovhZ8vS7v5QdMHeG1QX1Hwrl3qo5keT7wWy3zadw0lypajl2obgA-6cQROEXyp-e02BJ3S0ZQ9LCXQwrKyjqrF3s4Jm3deEiAm92rwfRYndySq6aAKATfsX6squIdwLJE2qDe5_pRfFhSogcp_K8fsfWh5R1ZKwLrI9tLSA1wANHjXdH7w3DO9BtmeT8101BVTpBuj1gBHxHTA4c-5NFrg_xV52KRk-1BA7mg6Y9zB7ztatOLFwobkgZkFPFwX0l8ezVvv3yht1cbavivCSxGx2ST8cDoYOfheVUHCwobx-1D--D4L1HQ4I6AhUgTy-F-tPKmaK17r5OhYZsSGzMto0dm5zp88AoldMh2ycP2VhfCgv9to-2KANsPkjmkiO8pew0sgp1itBIil_gQc6VY5kVmydI91RCRFkaRl8srV6XVE2zygm9pqxg-gvbjufORdLUufhiVuRUFYJHD7di1nVui1KQWy1arpmac1iCrHie0CMJavnn-0JAEdbSQv24TFcMjVp_jKhnFMaQC1nXmuL_YNnD25RETOVGxLGu_MxG6_QuL2BhlyBe9E5JM92UbaKQDNySH0vZyDai14ybfWqv4fAFNqv5vjZN8t1EZf7MLPkoGUy-swnzUzOuoX0RmuCIeTcmQVRe-4kFmD6wBFkpswCbQkDqjko8S0d4bWdLNdSt0cShuXRBOXdEgIJVaESc6JyydkCDShaZnFKy8cqGtMos6t3T1GnxAdJftN6v7-HmGGXg2UCxsVf06hO2CiFsidK6K2EwCimJtlW3Qr2eLTecZHPkZOm3Hq5Q3f3McJkIWLIrKtbxbUPpmM4QUFQuamnn84oTWd2CezkzHBiq44UuX4ivqyivV9iFxOzMVXetfslxWLuJQqCW6C-bleNil-YJT_z5D65TtsEP4WVZdEEp5CbBqE65RyZFhtxyVES1v5kkzC-6j5_t5iZQBo4ejid4rSchlUm_3groUPkWXiARnC7ioAgV_EQX3zPM3Tnfor5nN5RkW20ukvD0XXnnqg17ile7K_TdI939JaX4PICznsL-o40DyZtXANu4CjAzU65sFLCIlgzy_BDV2RuZk1Tl9tPWBSeCjUCmihrpLi2jsph6A8GGzjWlqOVzrc47MjB4AvTkSl3SNx72862fUp4wlyHClyM0b1j0gP6618eAQif-A6avcKAHf6vfHdKN3ykgvELHJdZNwcYh6VnxpJJbDX8xpmeijRlC109pEuZrDNE-QUGoMANLB-An6AkuWYdsztVb8IQCYOnvu3brBVMKPEJFIHI5ebRwPq6fpy5ZZ8sOYeZL6irjzbOy7surIlewxNmQcaDK7GQViXrdAtdO-jh5Pkitq2h9suNUjsixQ9tVV9DW_hgcyKyNN7qEkv3FO8m7AeUjKi4pVn5_Fw53Jf6GETqhLr2pFf08HU2FzWzgPxZYPXcg_aLClF85Gi1nrI_oBt4jyx_IG5H7RQV_jvFJ2E7I8w8pdeRW38_XsdLhlypHKXIiuA7veVvkG9NwGUS3rX5tFfTirBEAxhD1QM3aWpxDGNBi_2qsXn69bwdJ0w63p_3kmTX9QjTvhiEMZan_Ct8Tltat-VkyReizTkVuEZfZC6srRQTFkzPR9y3Gsq2HPnCBYlO3off1IqrQRXvPRjceSy9JuBgo-NB0sGKehCUI31KY-EHmPl6KZ-fS2YjuXVVRobWU6A-1c5VNNFvCsyVCmqHiSCBiYlpFse-tGX4HiPjVVt8h1j-t-HQ6iIqaF9EoMEjy2dzjtDNapJw3ZwDAUuuCvANxGLpIH8wk9qUzCdD8-gMCrhpRwT0p-nVhz-Pxo3t350wbTZM7SEGUgHsONJyPicqhfF4Zw4pouLW39Gyqj4MQEUEBNJAYvxZgOma6wo67i_btUEMOlHL2p5G0bq5_DdYX0YHO3skCQf7XWOFPsej5eHUo5IFlBfv4DB4FBq1rXelHj63ISnQItLvlaTfbxqbF1OBxenR3fqNhtIGrNJce-pSHq7z7x_LvJf8RkUKPmTDNFFJyy56cUin3yd4Rr3KlGlJybfiVCsWzCAtTC8r1n9kTzBjMMh41PIifx6f77e92HE3FS8y5ystZP74z43kvVOUwbJWYz08tFEvc0S1gKhWYwGAtRrAgrGSqloRPFEg_dB2VoQ826bsrvlpa-4J1sNkNRnBjrN2eGw86Pf0Ja_GxasJKhErSM23dY7LNTIJan5llX3NhakguoQ_r5MVPc0u1kHM_sPOUqGsxR_9aJijR-COCNM0pNmFUqH9opxeAIeKrc7FcRvb-GxN67fmhMr5mYsW2Bd6ICLX2i6tj_TIsZpAHS02xN7j2DJDqWm6apz_mRByCkB5BdzYYDM1s74dNMEIF-lqWPbliJ1Zlq3J4e6TeMYAZvo7iwBlgu8X_Ye4WCbWaPmSIx86jUk_AAemN4EQIzN-Lu5Y', undefined);});
+Nitrogen.$anchor('.wfid_temp620528515', '.wfid_temp620528515');Nitrogen.$observe_event('.wfid_temp620528515', '.wfid_temp620528515', 'click', function(event) {
+Nitrogen.$anchor('.wfid_temp620528515', '.wfid_temp620528515');Nitrogen.$queue_event('.wfid_temp620528515', null, 'Mn992mI65i8xTCU96Vc4HbolrzP02AHf8eMM2MDMT4e6jSoNhiZp3uc8YOTAEYTXWclTkKqx2TkqdyfwHzKfIIbSR3kwNjkSXJBsIypkznrSoSECpKQrv8xnR7THk9BHPgJFvklHQs1M2HtARCD9ETgTFdmnYp9zLI7niyKOIN2F1UjaZ8Gakt9GGFLVoZu1X1o2i8QI4E_weekJCtQbjVOPoZ06ajJTC2nEvm3Pv5K-oR-5yNKg_mXBNZf-1WZbdj37MPFgmZYiXucGtu9ffbc4T12EsW2xb41nWabot4CzRB5fsE38gyYdU7etCpHn6nCfd8OGKSMH3yxIVQILmcAfK0RbXDcqM7ZPEeZTBmiBDYAMZ3zPH-y6gNkVLg-D1JVUVmIYhkzFdi3aROy59eWWsJEBWnsiNM6Ck8hEFpRYVXg6yluvDIoHKMICdWqmzM3QM6yBEWZAJOhEr1mXV_i1PCZlX89q1xaPhWQtM6hTK3LAXpqrl1tR29r6FT5V6AlbzaHW44EfV3gPs37zud2rwA3Bjod3uBt5Bt3N-553eK3yb0hHRRJMv2jn3SK7ffiU0kbvVaQhUzuxJeQScEq55qYCaoHeme9Ebbjz6wXgyBq1wfaTXTzPsRHi4EEFSy0BTF_xecswY8Ti5XAmBcYuLQKFy-WBwM85MTuL2A-Yub2po6tGgTq3AE-BQfOkFiCDU0ViGuvdTe7diGEw0FC8dto1Nr-PVAl3UQW21d50GkkRu9S-jtwo2CuZKEl2d4JwQMLrrKcHEi3mdUpXRu8LVimicr2l3yHv4VC3A_uXJccR1F5jXKm2AQ-u0LUbdSJNPzuAGmjRXYu75W785zEwQgvyEBzJfWVZtiEL4tzaHaybj6kffz6paQyQy5_cf-je6dQ1u839tNoz4xewrspWguxJNFaMTFmc90AIkL44CvtsOIh-vTdr956yYmTB1Jq7qkeA1VqJ9OhwJz7z4MV2sv_Q1AZr4tJYlm104-ERYUrVHtbk1GKMrCY4pzQhQSHx-YRoBpHkDi6DYivACnvGxsqHf3My6n5WPowI42tGJfxAdWpJEJzrB-Y4PG21wWsGPbRPzFHiEsL7_tsSJaimCbtqvdNLLZcngQFFSFtAQiibVdofnsqehNRVjMMiRB3zcQ7KDTVL3aQuKlEx6qnnjqGMihyw8Z8aCMIQNnKh15ZXwY8HZ1PzXxp6gPRG6ShBc17fFLpig94cB2zCxjz9X1wRmUmvkl545b5BhDZR_0PMhWFnHXWwIxYaeqfKORUOPTLtHcdprq-HDZvks5w0k9r4QGi7iZBXrResjtbC_5fGN0iB4l5b1NgTOgJxXdGxVS1WUFQsdnP-D1hD-0nKwZc-U2VpBMxB9WsnPJKhHtsfPUTgR5KFjCtyXKgQ96nP7Iciy8Ti_aatjqX68hJnLweXRXTG1QeDsqqsG9PrEoPnvDyr-vV6aahi7xvxzap5D8LIwNZkHHn9OLlGsGDOP3_UOlnejgEwnKffwAhCiK-K_S55AWVsyDCdv09CHulxXXDjncVULeM05H31AtPwC8P-ywHUg5jcZ5acux87mBviQCM0xpo93HGyrNj3CHK9K5YldYSzUOreNyAULyg6YqAX4CcSbZMwzQYcwfyHt5F7kSbvpATO282rpfgrtRWZC-c2YXwQa8gpdIxjVruVeA7pDcHJDa_krVqouKFyldQa0U_ge3QtJa5tA2rbXUKmUXZ5Pb5q74JrjzIbJ4yKi-NHsrxoOqAeiy2D0KsYOxXJmQgh0xW6wIMDpuCDs61gwRhEZPJOWsydSeJ5K0atpJu4Gkd0o9R5-a33sU1sefxwJAsRLn6OwehQ6wNfCtUaIZY_0KDZj6U7mmbzEVxYNLjKP1vZjFE1QvaeTAMrDHIxdrpWvbivt2NWIOUiHPfmTNvbBJrQgoPDB4n-1VowIJ3AIRx3QHRbRd15ppmJ7OY6DTDGle6XYPTmiT2Z57G-fn8xbpd3AS2Q-t6gSf2YAgFIiukKiOoQ_BhasBl3Jx4QoyjY0_9aKuWyQntJs61w69LYPELq_IJoCJ-wtcupIhM6UsrbmKDKDRXLwOcrrRuoXIXDjDp_4XHcqA3rh7arBXO0Jyso4KHC1aTI-9daSCCIV4LO7lvX2zuea8GSLnKoS_S8HpXE-4SezSdbWNd9Z35OgMp-LDtozoRIMH0FpmRKegYPKquur3vx7XMK_Coftgmmyr7tgNu9SB_d2ogYpVvL2xfydEiBrUlYN68XpKfP-vCcXXjRO4XNOozdXMHEH09XoT4gOLoBRkf86LHN42HSMhgtp5mUJQtm1yuPvp5GGTXXC9grPAMU74-7OvmZkWORt4S094LKyVDwGvv-LZLTg0B9p2_mJ1DaTlVolCbeqwIf7kh-g7Ss3u84VTgblNTcPQx_9MLztHvLSMMPT8wPSr8MzImrChNv63Kh8_orEOygEIKggeSIHgh8J83rNmxtAzDjt42Kd5YEvkMfraXDXClcMlzXIszvlJTItkoif-G6wJostZf-4MBMfM4SUOsLWItJthchlBehZZ5a6qHH53RnqrCmQqzljNF0sg3ZQdHVQycT4OJwlVsB2YYGqLxb0Dwx2icw99QIMwUajAzq0VnF9aPLymWGEvTaHhZI3_BGVqcunccDAaP3288yINPbVR6hGYDoYw7KWuhczILjaYu9WzoQiHcwO2zvo9oTpTFSff6PvbHAeLZKLkPOy7kqv17LTKRUm9UJLz9jc5yJxSRg8dXnCHnAbBJmB1sm9OBXhZewKw8klztdzrOIng6QyVQo0DWR4k3DB3PBse1_GT9UJDRoymgQa5N2MYefvVAVr2peFc6_7wkU5fveiW7cG6UaerJ-7AeTRuo6zz4dgh0TwM7t1KbLbPZ4C8uVqUeJqgomUQuWxEBOLDMdhbgOdzCDuJk9I5UsqqQP52HnmW9f-tU7KDeJN1Ae9GFJXXcPG0S-eYByvQ8012BAQwzWdxvmf3ajIzJRHbOcnczAblBjsqWfy3uorDMOKY5PuqsM2TIqTrXyf9gZ5M2lHkD4FpgcH9fmUq3Hai8i9JMr5fsq3Lsjgr2zCB-YNTTrlkBKWUmQgWZga9gE9X36tf5ODzS-pD7lXtqylcUxii89B8WTk7w1Ee03hubkyXrSBY009p0dB-Hx6iArKWco5T6mgJ88CMo2qsoFenflg7pa-an8wHu5U8aIEuPFiRj9rPq0M26WzjDVFigMIAamH1FLhTUb6LQnvzwgAN5TAR2s1QVyoYP6t4XL6PUiZeZSI_8rJgApYl4p0tx0edxLKEj5iHRk5DKz7bqgBy-P2bsJsCSWpHbdHicHJdm2X3iQwl1DzRsTHp3R_H6lUnPvJjKd0ghUBqE7e6AtEbfbtjHu-TJlQiGHJfhiBrDn_qpVf4ztMQG-H8_S2I85NAehJFCKmEDunMIQappxoeSrlhytaw6h9o1SUMjVSj3n6IlBgbujKoxr3DdwxIZaBOfRPZ96CBW5hki64tFZCKNO_4X_dM7ocw_Knq7vfqJIG4zpqWBixNY1Tb_BmGegR5m0wLwQ9PXpW-yh5WOJmoyIpkkUOGTw4JwMxoHpPo-ZMLNKQP4Up5eX4IVMy5_yXQt9KcnQRbSTjDEsmml__OzzFR1tCXk9reJN3BTehGJg1CngDzyJiShceOMw2kkD4_0NOkub_9BzVm7oO_QVs8u1Rcz-jDF5ltZGwOwI7m7D84yl1d9m_cqedYDczDbUJzZGvifHoJ1Br6FC0VU4xnZKjE03n7v1pQu4dZtCJrvSrVRH-L_CRXrtTV3TqirMU_N6rGrrEl0KhKr6YG5dczctTZRPRdWLXWSa1hYBqtek1w9se40Tbk10GGFMMUlLkLVw2PfVZfmn5NoVB0q3cPbE47WgBFytWLl63-XnwSQgQBcbx5XWcp6WKpkIUn3EcuyoNnJMZT8_xJjNDVOX2ZHwFajWUfwnukt1K6pbSbTPxlh2Rq4o6SYrHhUPqnwA3rCv', undefined);});
+Nitrogen.$anchor('.wfid_temp620528547', '.wfid_temp620528547');Nitrogen.$observe_event('.wfid_temp620528547', '.wfid_temp620528547', 'click', function(event) {
+Nitrogen.$anchor('.wfid_temp620528547', '.wfid_temp620528547');Nitrogen.$queue_event('.wfid_temp620528547', null, 'xmeC5HC5w_ZNx7TFgyCTMX-7ofuV_rEfq_PSLwXXB76jFC5y4UxSUFgnwpN4gJ3nN_0JSP9NqZS39GJMIvgGFgSg8-P4Jh0_byEmZ9EPncOkdjzE7kZcgWa42NbMNj9LtNPaZismhNU4-ejsV9MicGmqvjtbav5KjiBzAF0Fck1ujyWlrPlZa2fvwt1YJCdCD_LqaowN8UNXEMa79TrNV_TUi5dlhblRWcr6aN6f5uQQiXHR7Fk6HNFnZG35OV3HOBOMTJG3oDVeYTMLiN8bJMlalTLX_DWtRmIl1SsEPFNPXmP-fl0IBROg4jEiUUt2BV69E0rYmndtwHFoRE_7MIpRoOCjIDUBOQauZ5_oX6YdqCN_-HStH_B65Nx-bd81qGNvQmD4nezC5bJI9X_-xi5-PIhH03hN8mimQDP3_nCKuSVASn9d1VBWchck47FiXQAJ5cQrPG_s2Qstaejm_iU9toSKVH2fgcgWaarE4aHou17jzD7lQeDkZBkcJWX0nyuBXpGHNsX4lPQq7yc37piv_bvogJCYWsQuiwzIYvVDWHpXGlRtQwUBN93uYOJjsr1zjcQ0vP4ADipig4qkcnddIc2eLdhu1vYWqO-Bcqb5GOwJhWeO4JXqe7aVVJIaKYO7N3cM6HfHtBiwbotD8Otn35czW1L9KfopAhCS4QtSbsr1mFtVl62ZzgXV2SMl1-clEgK5U55qtJyv1DdSE09jATAthpaKAqfCtxEwdO8-J3aIKgOEV35YE3t2BZ-v3uoMelsVH4fRIgfMSpLPi_1Ps2TxB0ds73zqekX3NtCuJvfErWvv8u5K4j2T1IEZXRGTEvRY_mHwfLN1MCLIsoKIVGuD1MUaGJEEqftjFekhhfQo-A_IXviXL25O34fDCl53p3k5KdOQXdTJr8DNKb5Q2en9Sj4BJd8kc7BBPpsKxvdXzZiOjhe0uNLkuedpRDblrKgfA2v-FDMgunEKgOolC0C6_M_c1UxLlmYQPl9EJlL8I1i_-VbklPrTRUe1McyO52JWFPxtwEwld3hVefyZKGjL6gawyg7XA4eojgLDmx1JnBMl6cHkwN-6UaZECzfppcaV17CDjTINw7laZs7B6yuB2TTWoijXZZSKXqahqns2hoSIAg6zo5hwuuyCkQB_UDLIJuoGVZT7OPZFAjSO6xhqV-IbZdkyGmew8gncgEJFE_Lb7aeVxHqbDHKm8HpnO1ybvrsUvWs3vdn3x0oKxVmiP9ucGlKZledM3itDk4tK3aqrKbBgDAGGTceXQlWGrXjQ_vx0CkVUqbzHnGdy05CCdVCwZ_6g0uQ6iD171ws3EBGuw9CR8yhGRpNVEvaVXqJeBDQ5cRhFfIpRoWVFo02psOqmPThEuVmYGUWKgila35K5K42pXrA4iqWq_vQROiqaoHwxedHV4ZWUasRuQKq4xDlcWWH_eYWmSHe-UIMZfhRC2N-alQlp69nWvQtGfnvqpezHNZG8Y4bFNW4m6iUe8tuDkho-OV6Kec1vzVL4qUxRdxfJgt8NCnVHQesA2PnGZiVQ9fQupR80kG3t6jUxKib18I4w5UQd27E6XBhGuEaJuedjFu8TgbkLseUGcw46XoR9nvt_bQLeIMzzf_o3O6zX0tDFzLS3dIVcR5iTwUHqqN03yvXHvn6PsX8CeHYQEaVDri6NteWV1uV3B61j7Yusm4iRSRCC5Fsh00tCFbywaxRTRnEd84c0POLfaXsE_cWWKSv9iRR4kaXVWhFRP1z7bOlcc0pSiu5jzmR3krZRi6rWSYR3AnvTloo2B-bIAXcnAtVTblxvtapB_cci6_Il0NrP1IW-Gne4HgHS2c72kYHH1zDQpdBK-1ju5R6SPWjJ7OpZw0KCemLkK93rxLmR4cCg07PXmlt1O_pGLDr7OyRT6a83tG51m1YeKNLHDm22d6BEiIbQrGbCniSS9VfHC1HUhIY3ZE6jmou8VX6Qb7O7QK88HQmkREqde13D0gYTUKN-LPWJMtwxrUZVEVwIyTspq8R0NPoVdaqKvKNUBvDicgbBX6OKgMpOvUE19kwD8nCZZgUbSL2ZGEKxz_jQ_nLwRr-VeU79p4GZoMBTgbXTducPyUjm_S5PxVYWlwQtS9IxtEPoSGWvm9Eq2I1ZJnErh-QquZGnXKtYIRqTO0rzmXIBVZCqdTj1IHiZPeTQiEM2M8ylPgjXmlHtNlTuZZFdCYTrBEBo5atM2SP-KLWB0e2nEFi2kno9iHfqNi61K2HhHnBVKyF63XRzd7W-URRTFlfqCAhHLPfPfXSFLbRY5LFjR7YN8MMy9pKYFO6p-pVo_bNeDuagYM8HfNO0aahC18mNeC5fAtkHI-FuMVuiN7tyhnmjase1ApUb5MDoOuscfRdd1o8L1QrPamGywN7NoM8yaRAtbeAFFaKixCiT6q_3Nj4FCtowTgMx-TpwVHkvvOvLPyodU6gKrod1fisJDT61ZO1jKjGalGCgqOZINOG0DzBkB_Mtz01I0RM6Y9jHeeiGzs01yVZkpbZ7saP8pXW6_Y5zfhltHKHnyidtosMfALL7C8bnb9ETDdokLOdjsqROBq7ujFwDsjKSzuBqgsby_aFp5LiXueJDaPU--dVKWZde7GKn7ydVsoi1Tiulnq9yFP-gxaUx_wMkSUwgj125hK0qikYwvurvOBAWj3nuE2s5Vjaxu-fgALU0E_kD6XY49x4RcGHkx4IN4sDEc7y9ZiobC3rLC-Wjrw9PQRyH4M9XelEvYW6pAbAyOiwGJRrvdsRmFmTkKMuHxveQpn9ZZYlOQIko_rqj_SjNNzPctFYmKC-QD18UQpbjqrp8UWq5QmVAapqkBSe9oM6qxhgu23JCPpIndSDz6JyhRqk3X0YMVpjf8700HuZFrUCk0p8MtH34KSaQIjb-34qYn9GxcZY0BuJ9RlI3bvS2PWSAmKOOfUNC4xQiHM8DC_x3phN_BdEbF-VfACBulfvtr3iA-CQLfnXkvSzacLat9xNFlPPCHR2jIMTZ8gSpmfmtbnR_IzOZU-DMnqoAK02kPnUsCQWPZphbAbNUDzW0qntJjXf5Zd2m6GmORszHrJKlZfbgRzDvIkPRAJctyuxyq9VwZsRHM_juIWWwks3ZuwwTQZ-eRHUbPAjGHiD4cQNm0_7-gfG1JBTE8G6h0HXFEDt_CxJP7VBB7Ca3EPEBTwNWuvEkjnGYqCOfkLPAdURoey0ZPnmqJsKAZASXA0qV7e4OqVBbO5wMQM5xfeoeQGsFMSIbCnN6ZcbZkktP6CCDRtteWMgZ4Ccl8WA6IT6NE1zJ3Az5aE_hIlVqf5ChgPppRdNOoD3eitIDNiWK0O5G9EHlVyckkYsSPsXQ3Yi_WIkoo3w_LBzJTo57qsk26JKmp8ngYDiJ6UMzq3dDeG28ZE8gjbRVEVxpo7lSRjYmyfOLpzxqeGDq4bUI4dzwknrE7Sigsz6Sz5eOnTcpjY8KC0dXHsdostlkkUOQp-5H0AWCkB_0sSRnhPnCtklq5mK6xoVvTPLIMGXX2W5jKB9OwDacEa5voAue3fmM4hEUUodMJs568iQ9RFRW3dBIxwiRh3btrMtbPlNiG3QNZje_-Leyk7aHYzQJsFRMsPtFEeaKjItDgyJZm7KNkmFaPn807l6Z54Q-NYT5Ccmc5GZRmVOtV1QHlQ7xUnqKc57MAmLDm0VUzfglSG0-Pig0uVOIdV60E-deWqjpANVuaxu62J-R7Ojv9kK_gtsBpa5_lUbtH4qKQuQ2-s7Lrgcvgm97iOjU_UQvrBcE9wIU6EdDLgcoUf5tsWNwND1SbCclQ91dtPxuPnYab8fdifa1TKXFZjQyADyjKtk9yIeOOnGOhCU3kfvg4G_msZ3Ljuz2ZKw4vpvBdC-9tijn6s6OGejKrgajoyAGDKqP7ma0ve9jfEk87AL4F9QfpNVcAb3t56OBadvnTLkSLfER0JCE9s6nVQ-kqXRZGdZZNtvDADJ0e8cRbPYQZZlBliPoORKnsu95vUIrPOZy', undefined);});
+Nitrogen.$anchor('.wfid_temp620528579', '.wfid_temp620528579');Nitrogen.$observe_event('.wfid_temp620528579', '.wfid_temp620528579', 'click', function(event) {
+Nitrogen.$anchor('.wfid_temp620528579', '.wfid_temp620528579');Nitrogen.$queue_event('.wfid_temp620528579', null, 'Om9lRdxvueie461LMZEQjGi12-iHPJK28CHEMy_GnLOAXg5Nl6o_FVMZlYk53qP4rmUj9-RJDxLcoKejYiKXp2TEgY0H5lEEgUcNv4BWEQrnYlPWDbSpzYYjqK57Y4_N5fpUUjnVtNX42zeMfziYO1diS34oNqVkKwURUQzbiZgNTwDiT241zFmY3rnRd7chQyE2TbeDMXYkBWXX3XVwjidFK4JsAUlEp7BMJnGpTp3mbz0IKggRm41ddydYAgaYPORwZMAtOGRXrKYct97BtpTwjscB3wz7Tx-3Vr5UXf4bpIk3npLgjThoOoDIfOd-_UBwfyTfKmbD4hgRtA8vjfWeMWYLXx_kenW50q8axIS8bLCeIPsQ43-Jrf3UTzc2T40q7v42A7yGLSLkY4IPTSE70iHs6C1gRYzrAwkjFRLYrLHWvucqcxHUljDVcHIbAMnLAtqvkFYVY0rZVyIbjQ6CI9ua5Asy0VrW9nSZDS0_03yoUgvV_cpvzrye7Kq2O7TexVXDvPqLITlAaHItAhqKh6G_z9Cmjz_GpZwizPuoqe9yInzk9-j_WCQPsZdDq50PFYllOUKR_s0ktHZ3PwHZP93yn51_76q4VRitq_YZvq7X91MheYBVj1KQSfWSjlafQWh3rFX5Y7FaFan9byZys1nluzgBkKKwyNUYe1D0K3OPJzX-nejZ7Mvp-mXyOB9jlU61m8EFfKR8wqneHcReGHnvkeEdZ58ymJOa8xIJzRGthot7aZVELNiuo0HSbf2JDD7uvWb_Gby3xFpFGP9N9Om5ftqBYVu4cDXML2hQ-zHbLqbq0mZ1aBIOYsm6CRNchWS56GGxim6gGPHlT5wT0sD6ESmQuGXgaUvbscE75vhq95oKt6R5VxldsNs0wDYujwQSI0gpqjjEbMc8LRlvwofdXhYjThUUhVyibNwUhTfs4KgnpjclmqkhChFpYIZf3WMM8VB7PjRi2F0BnDS5J9hzWfJK-v4QEohnl2Fd6Y3F-iB17kYEbwGIaFpinyxtGHxsQFkkiuxH59Qo61WzUCTV8eOcYvfBVvkybyypcrs7nz-_IWUuZDUiaLSizCi9OGFW5_XMV-59k6L7V8X5wm7NaetFVctZtjDV__EQ_7Z1uJFMYP0gdHsRy-CtqHyD6QWjqNra4_dTrhhOy8IUMCtbIgPWVgxYWVKaDM1Y52eQTFCcNJeLn64W88pkNRMjCmOQm74S1vKHRtqX4QVg1fP3m9GCB9o4fg1uwkWSKevj0XdVgR5EBoIlfg_ev6WOh0-kSdT2qFV3RCiQMz5xNr6RTz8KRJrZVPq9YoknyaoKnBavABCnataToGLmnCaDd98Z8yo3BynMzvKobKnVEEJXTEBGYatt7xk-CkajtiMCp_Jt4v6JPgRkgVPptB5KnAruT7ho8u5PgpocgVvdqDvR4Eu-XmNrDp4oj72ReMJxFtvqE6aIAXYpLoKDERMf8BlfqwMtAbejrETiP-0VbA1PQ5NOYfrwuDDoLnfXg5yYvrCP9uSw9k6qmx6L_nJCVIQszGAwSsCOMduBINNG3rHZqhFI2DCty8tnssVK2LIPIrwPFQAOeJeybb_AxyhdIp67YQ8T2E3qIYhFjjf9raqrFcO82Kk8nP0vw8NuiIY8-QkboIRoUVioD3KwTzbZPUecNi4pQ6DCZvAxoDYAheohYrZDrpLyqNMn1W6P79oB3mTcdKr2wDyR4UVOe5qLz66ZPQ0ZtSxz1FAaGWAWQEHWCbHPAnEEudjHkFQK698I0UyVov7qNXaKlhbpaE0A0e-pSihAKuk4baq_LZZJMfjltnatE6_ZiM7aPrfFVDH02oIf37dHtp0T3dUPuXJFUILFL2nCpceIiDW9KH-tPhAqlihYm32PXmXnEMGuVcurubTiSF5u5c6qodijoII1i-jb0Dz6yxi5Wey36AdKH4VXEZf7atDIntDjLwDan7s9_W0MDjp9UnG98_3_gf5LF1C-7ca3Lcs_FovM0jlDjHEJSA62_69FWlHRKsfAGbdRrOqqtOd78p-HEKxlR_R91590rDLyKEmtb-btJguDKnvkdnoejOb0Ey_FkbHrrcLrgzBp-s4FjhqI0Qu9e03xvfk_M_bTT9hht1RZFi4kgO_K_f74i55Ui17HtCTcRLQAIj0f1EBZ-kVSe_0-UjROOCc2Qsc7d_V8Z_hQZ7ExC9POZLTshN_SGj3f9rK3C7o_X4D1ZEGPm3SUSU3F0Wi8n2iu_BApmtl2zlbtAEPcvF66yxqUurL699RZXu3v1s5IBLu9v3bD5MsDIpgqo0f2-0BjIqukEPXDgKg2hwRYWeyGjSoZyreoFAkMjY7kcE6FeXNGlI0LxgS4il-yF3bG7w8_8GLbEwZzdiguM3e632eiuswG9tsej0FCOWiGPRqsET-GAzWnC79ZDAEmWOUqC2YRtoRBAjzX11vZlR-aruIKg3ovDwlAffMcTYtPBDZ_brcsbDDWIL5ED-zdaRF36_m7XDEj0g4TpLcwRhOBp6TflU4_yIsJdkN2OoZrJizaPLojrvltA9ymog6E--qQdu1g9J_og0TszIV1OgtfXKgXhmnpxOxKJdAcVONUUhLC8W_Hdi9WMap26hMxJa3onApB5DDbJe-o-f0o48VeHWgeH2XW0pafs5Y87wgN3d4cz5XSFdJq8Lp8OOt7_mBlnJ5Rwp69_JkZItuAhj4cE6XxZTkTMVAsEQArvLg8dzoqly5UmlyvU49ditgQN4B0e53uCykG2Js4MJCAXLkqNdMjU6NeBQvh5662C6P8a68O0DlCSEqsLhMs9L9LiHKiLUvJ6Jzh7dujSeL2yyUTA9IJkN_aQwB3JhHjA13e2UUcIIBm5bPTqyoL8njtiFexHKVcC_xucacdxheroIOxEPQa416n3YSRgXO6_oKJxLU4scTqck3_AXPQhs0L1nWAgDyEmsqZStQFdewJjyEXgiss36GennIY6TE8D_e-IZU0BAHEJq5qEq7fdWxKQCFYXOwhza1oykoFZEK9ULELBFxwa-vrkMEyha1y1g3k-O9oRjS38c4qgz-tk_8f7xTGx6V5LdLISFuQTFmuum40RzeLP-KO9F-RHAkbm0iRNxPzSrZsh2crnsBSAf8NDNPn7qzJHMiDazMeZaFc6Vk9HEqex2aUDfMJUyP82dvCcUQqemd2B5oHrMw0PL09UMu4u1N42mV6-OpG2NVZ4CkA48e6ox5k7tHXc0qQnDB2L-bVTHkVgOpsi2y1o5XBMWuyEZfY-B01ljPmFfwsjgvkUhq2W_fLn0lo1bF-6TVDqDRivacOK8dxb-6TmQAEMqxfccuoa53X3SZ9au6UBf0U078OW-7QPAW7uM3lxDcdmcPsn5aQb3CSqLItQl301LaVD8RMejBOjy1eZ4RNcfVmCSsHuLAZ1tuWjkjrzL38W580_qDIJW--c3DRvt34oVvLJ2C0Ulq9GJufbV6MVyxtS-KwQa5q7EtD3Frr3HqbYj3yCzXqLiK3qFMxyvGR1HMHj0Lc9aBnqm0UEZFDnVd16Hk7bAmOyPGQiOZ89b8fViX7joyNL1-_rzlUByMhT5RWX3cT0Mk509508UWwzfsrxUy5RB_8Bfp99zelUTMwwnjFbrP4iG5LXJYxhWfCGY6UM1DJkNMUu0BNknDN41AR-RHqQTjIxcRp6oqdSeEcBQyLRb66XXdP8qLiDGIHATOlEqxFxOk7rJDaeLLVSB5XVzx5KgDvHc9fxW9UAzVTatI8ns0-icufLMy4RmMgj7Iex0yeh-xUp9wsMn7BIQnvH2CVjQ58BYzYPXaLYZz3q4MkyqSXomSNQ6I_K3hQkKzKesoB26QIVAynOCTQhfvdGa1eKOWms7mEwb1xtbqUaQ_YtgeSe2YSyJLRI_fXFfq22P-SlFoLwgJPc1Jg9GD_P_xLBHjZp5rTauc3nxiPbsC1C0XeR_ESosPR8V7uTzYW5R-Rt4sXTj3eZ6NmOGChxWxjPNUdCB3g8dTAybf6-hz1', undefined);});</script>
+    <script>
+	$('.btn-success-outline').addClass('btn-outline-success').removeClass('btn-success-outline');
+	$('.btn-primary-outline').addClass('btn-outline-primary').removeClass('btn-primary-outline');
+	$('.btn-danger-outline').addClass('btn-outline-danger').removeClass('btn-danger-outline');
+	$('.btn-secondary-outline').addClass('btn-outline-secondary').removeClass('btn-secondary-outline');
+	$('.btn-warning-outline').addClass('btn-outline-warning').removeClass('btn-warning-outline');
+	$('.btn-info-outline').addClass('btn-outline-info').removeClass('btn-info-outline');
+	$('.pull-sm-right').addClass('float-sm-end').removeClass('pull-sm-right');
+	$('.font-weight-bold').addClass('fw-bold').removeClass('font-weight-bold');
+</script>
+  
+<svg id="SvgjsSvg1001" width="2" height="0" xmlns="http://www.w3.org/2000/svg" version="1.1" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:svgjs="http://svgjs.com/svgjs" style="overflow: hidden; top: -100%; left: -100%; position: absolute; opacity: 0;"><defs id="SvgjsDefs1002"></defs><polyline id="SvgjsPolyline1003" points="0,0"></polyline><path id="SvgjsPath1004" d="M0 0 "></path></svg></body></html>
